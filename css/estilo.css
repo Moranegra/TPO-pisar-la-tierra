@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Main estilos*/
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    color: black;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.2em;
+    /* comento y lo agrego al display 2*/
+}
+
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*clases utiles*/
+.contenedor {
+    margin: auto;
+    width: 98%;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0px 5px;
+}
+
+
+.muestra-1 {
+    font-size: 5rem;
+}
+
+.muestra-2 {
+    font-size: 2.2rem;
+    margin: 5px 0;
+}
+
+.muestra-3 {
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 17px;
+    padding: 15px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.75px;
+    border: 1.5px solid black;
+    background-color: rgba(31, 31, 31, 0.2);
+    border-radius: 10px;
+}
+
+.btn-small {
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.btn-dark {
+    background: black;
+    color: white;
+}
+
+.btn-light {
+
+    background: rgba(31, 31, 31, 0.1);
+    color: white;
+    font-weight: 400;
+
+}
+
+.btn-light:hover {
+    background: rgba(11, 11, 11, 0.9);
+}
+
+.large {
+    font-size: 40px;
+    /*20px*/
+    font-weight: 600;
+}
+
+/*Navbar*/
+.menu {
+    overflow: auto;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    height: 10vh;
+}
+
+label {
+    display: none;
+}
+
+#menu-bar {
+    display: none;
+}
+
+.menu .menu-item {
+    text-transform: uppercase;
+    /* float: right;*/
+}
+
+.menu a {
+    color: black;
+}
+
+.menu .logo {
+    padding-left: 50px;
+    padding-top: 2px;
+    float: left;
+    font-size: 20px;
+}
+
+.menu i {
+    font-size: smaller;
+}
+
+.menu .logo a:hover {
+    background: white;
+    color: black;
+}
+
+.menu .thinner {
+    /*el pisar del logo*/
+    font-weight: 400;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    font-weight: 500;
+}
+
+/*.menu ul li {
+    
+}*/
+
+
+.menu ul ul {
+    background: white;
+    position: absolute;
+    transform: translateX(40%);
+    opacity: 0;
+    transition: all 0.8s;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu ul li:hover ul {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.menu a:hover {
+    font-weight: 600;
+    background: rgba(31, 31, 31, 0.9);
+    color: white;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 20px;
+    /*   text-align: center;*/
+}
+
+.menu ul li a.current {
+    text-decoration: underline;
+}
+
+
+/*Banner*/
+
+#banner {
+    background: url('../media/ushuaia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    text-align: center;
+    padding: 200px 20px;
+}
+
+#banner h1 {
+    padding: 40px 0;
+    font-weight: 600;
+}
+
+#banner h6,
+#banner .thinner {
+    font-weight: 400;
+
+}
+
+#banner a {
+    text-transform: capitalize;
+    font-style: italic;
+
+}
+
+/*Sección Nosotros*/
+#nosotrxs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin: 25px;
+    padding: 25px;
+    height: 300px;
+    /* width: 100%;
+  /*  height: 100%;*/
+
+}
+
+#icon-nosotrxs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: 30px;
+
+
+}
+
+.flex-1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: aquamarine;*/
+    flex: 1 1 auto;
+    margin: 0 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 300px;
+
+
+
+}
+
+.flex-2 {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: crimson;*/
+    flex: 1 1 auto;
+    margin: 0 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 300px;
+
+}
+
+.flex-3 {
+    display: flex;
+    flex-wrap: wrap;
+    /*  background-color: darkcyan;*/
+    flex: 1 1 auto;
+    margin: 0 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 300px;
+}
+
+/*Regiones*/
+#regiones {
+    padding: 50px 0;
+}
+
+#regiones h2 {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+
+}
+
+#regiones .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+#regiones .box {
+    text-align: center;
+}
+
+#regiones a {
+    margin-top: 290px;
+}
+
+#regiones .box1 {
+    grid-column: 1;
+    grid-row: 1/2;
+    background: url('../media/norte.webp');
+}
+
+#regiones .box2 {
+    grid-column: 2;
+    grid-row: 1/2;
+    background: url('../media/ibera1.jpg');
+}
+
+#regiones .box3 {
+    grid-column: 3;
+    grid-row: 1/2;
+    background: url('../media/Puelo.webp');
+}
+
+#regiones .box4 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background: url('../media/san-juan.jpg');
+    text-align: right;
+    padding-right: 160px;
+}
+
+#regiones .box5 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background: url('../media/salinas-cordoba.jpg');
+}
+
+#regiones .box1,
+#regiones .box2,
+#regiones .box3,
+#regiones .box4,
+#regiones .box5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+#regiones .box1 img #regiones .box2 img #regiones .box3 img #regiones .box4 img #regiones .box5 img {
+    width: 100%;
+}
+
+/*Aside blog*/
+/*.blog h2 {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+.blog .wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+background: rgba(31, 31, 31, 0.9);
+    
+
+}
+    
+
+.blog .box {
+padding-top: 100px; 
+padding-left: 100px;   
+}
+
+.blog a {
+    text-decoration: none;
+    margin-top: 190px;
+    margin-bottom: 90px;;
+    font-size: 20px;
+    color: black;
+}
+.blog .box-1 {
+    grid-column: 1;
+    grid-row: 1/2;
+    
+}
+
+.blog .box-2 {
+    grid-column: 2;
+    grid-row: 2/3;
+    
+}
+.blog .box-3 {
+    grid-column: 3;
+    grid-row: 1/2;
+}
+
+ .blog .box-4 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.blog .box-5 {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    
+}*/
+
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+}
+
+.footer p {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;*/
+    justify-content: start;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    width: 45%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer a {
+    /* display: flex;
+    
+    flex-direction: row;
+    flex-wrap: nowrap;*/
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 15%;
+    color: black;
+}
+
+/* pagina Destinos*/
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 100px;
+    /* font-weight: 400;
+    font-style: italic;
+    font-size: 40px;*/
+}
+
+    a {
+        text-decoration: none;
+
+    }
+
+    /*.container {
+    max-width:1100px;
+    margin: auto;
+    padding: 0 30px;
+}
+.small { font-size : 12px;}
+    */
+    
+#banner-destinos {
+
+width: 1500px;
+height: 700px;
+margin: auto;
+padding: auto;
+background-size: contain;
+animation: banner 60s infinite alternate ease-in-out;
+text-align: center;
+
+}
+
+#banner-destinos h6,
+#banner-destinos .thinner {
+    font-weight: 400;
+    color: black;   
+
+}
+
+    @keyframes banner {
+        0%, 5% {
+            background: url('../media/atuel.jpg');
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 0;
+            width: 1500px;
+        }
+    
+        10%, 15% {
+            background: url('../media/iruya.jpg');
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 0;
+            width: 1500px;
+        }
+
+        20%, 25% {
+            background: url('../media/costanera-mar-del-plata-1130391.webp');
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 0;
+            width: 1500px;
+        }
+        
+        30%, 35% {
+            background: url('../media/fb5284f7872e44c6a71eb2d8cad17304.jpg');
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 0;
+        width: 1500px;
+        }
+        
+        40%, 45% {
+            background: url('../media/catedral.jpg');
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 0;
+            width: 1500px;
+        }
+        50%, 55% {
+            background: url('../media/belen-catamarca.jpg');
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 0;
+            width: 1500px;
+        }
+        60%, 65% {
+            background: url('../media/misiones.jpg');
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 0;
+            width: 1500px;
+        }
+        70%, 75% {
+            background: url('../media/neuquen2.jpg');
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 0;
+            width: 1500px;
+        }
+        80%, 85% {
+            background: url('../media/Traslasierra_1.jpg');
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 0;
+            width: 1500px;
+        }
+        90%, 95% {
+            background: url('../media/palmar2.webp');
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 0;
+            width: 1500px;
+        }
+        }
+#titulo h2 {
+    font-size: 50px;
+    font-weight: 500;
+    }        
+
+    /*.item {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+
+}
+
+.item a {
+    width: 120px;
+    color: white;
+
+}
+
+/*.item1 {
+    grid-column: 2/3;
+    grid-row: 2/4;
+
+}*/
+
+    .
+    /*item2 {
+    grid-column: 1;
+    grid-row: 1/2;
+    background: url('../media/atuel.jpg');
+
+}
+
+.item3 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: url('../media/cordoba1.jpg');
+}
+
+.item4 {
+    grid-column: 3;
+    grid-row: 1/2;
+    background: url('../media/esteros2.jpg');
+}
+
+/*.item5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background: url('../media/iruya.jpg');
+}
+
+.item6 {
+    background: url('../media/palmar.jpg');
+    grid-column: 3/4;
+    grid-row: 3/5;
+}
+
+.item7 {
+    background: url('../media/jujuy.jpg');
+    grid-column: 4;
+    grid-row: 3/4;
+}
+
+.item8 {
+    grid-column: 3/4;
+    grid-row: 4/6;
+    background: url('../media/mocona.jpg');
+}
+
+.item9 {
+    grid-column: 1/3;
+    grid-row: 3/5;
+    background: url('../media/usuhaia.jpg');
+}
+
+.item10 {
+    grid-column: 1/4;
+    grid-row: 5/10;
+    background: url('../media/mendoza.jpg');
+}
+
+.item1 {
+    background: linear-gradient(20deg, teal, turquoise, black);
+}*/
+
+    /*.item1,
+.item3,
+.item5,
+.item7,
+.item9 {
+    background: yellow;
+}
+.item2,
+.item4,
+.item6,
+.item8,
+.item10 {
+background: grey;
+}
+
+.item3 a,
+.item9 a {
+    width: 10px;
+}*/
+    /*.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8,
+.item9,
+.item10 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*pagina regiones*/
+    #regiones2 {
+        padding: 60px 0;
+
+    }
+
+    #regiones2 h2 {
+        text-align: left !important;
+    }
+
+    #regiones2 p {
+        padding-top: 10px;
+    }
+
+    #zona .regiones-descripcion {
+        float: left;
+        width: 40%;
+        padding: 90px 70px 20px 0;
+    }
+
+    #zona .zona-imagen {
+        float: right;
+        width: 60%;
+    }
+
+    #zona .zona-imagen img {
+        width: 100%;
+    }

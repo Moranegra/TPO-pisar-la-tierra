@@ -1,0 +1,66 @@
+.display-1 {
+    font-size: 3rem;
+}
+
+.display-2 {
+    font-size: 1.9rem;}
+
+.display-3 {
+    font-size: 1.7rem;
+    
+}
+/*Navbar*/
+#navbar {
+    position: absolute;
+    width: 70%;
+    margin-left: -70%;
+    text-transform: uppercase;
+    color: white;
+    
+}
+
+
+
+#navbar .logo {
+    display: none;
+}
+
+label {
+    display: block;
+
+}
+
+label:hover {
+    cursor: pointer;
+
+}
+
+i {
+    
+    margin: 0;
+    padding: 10px ;
+    font-size: 25px;
+    
+}
+#navbar ul  {
+   margin: 0%;
+   /* display: flex;*/
+    padding: 0%;
+    flex-direction: column;
+    background: rgba(31, 31, 31, 1);
+    
+    
+}
+/*#navbar ul li ul {
+        background: rgba(31, 31, 31, 0.5);
+}*/
+#btn-menu:checked ~ #navbar  {
+    margin: 0px;
+    float: left;
+    
+
+}
+#navbar a {
+    color: white;
+}
+
