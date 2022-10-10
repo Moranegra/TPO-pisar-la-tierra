@@ -66,9 +66,9 @@ ul {
 .contenedor {
     margin: auto;
     width: 98%;
-    max-width: 1300px;
+    max-width: 130rem;
     overflow: auto;
-    padding: 0px 5px;
+    padding: 0 0.5rem;
     
 }
 
@@ -79,7 +79,7 @@ ul {
 
 .muestra-2 {
     font-size: 2.2rem;
-    margin: 5px 0;
+    margin: 0.5rem 0;
 }
 
 .muestra-3 {
@@ -91,7 +91,7 @@ ul {
 .btn {
     display: inline-block;
     font-size: 17px;
-    padding: 15px 50px;
+    padding: 1rem 3rem;
     cursor: pointer;
     font-weight: bold;
     letter-spacing: 0.75px;
@@ -101,7 +101,7 @@ ul {
 }
 
 .btn-small {
-    padding: 10px 30px;
+    padding: 0.5rem 2rem;
     border-radius: 20px;
 }
 
@@ -123,7 +123,7 @@ ul {
 }
 
 .large {
-    font-size: 40px;
+    font-size: 2.5rem;
     /*20px*/
     font-weight: 600;
 }
@@ -169,10 +169,11 @@ label:hover {
 }
 
 .menu .logo {
-    padding-left: 50px;
+    padding: 0.3rem 3rem;
+   /* padding-left: 50px;
     padding-top: 2px;
-    padding-right: 50px;
-    font-size: 20px;
+    padding-right: 50px;*/
+    font-size: 1.2rem;
     
     
 }
@@ -197,7 +198,7 @@ label:hover {
     justify-content: flex-end;
     list-style: none;
     font-weight: 500;
-    padding-right: 30px;
+    padding-right: 1.8rem;
 }
 
 /*.menu ul ul {
@@ -225,7 +226,7 @@ label:hover {
 
 .menu li a {
     display: block;
-    padding: 15px 20px;
+    padding: 1rem 1.2rem;
     /*   text-align: center;*/
 }
 
@@ -243,11 +244,11 @@ label:hover {
     background-position: top;
     height: 98vh;/*100vh*/
     text-align: center;
-    padding: 200px 20px ;
+    padding: 12.5rem 1.2rem ;
 }
 
 #banner h1 {
-    padding: 40px 0;
+    padding: 2.5rem 0;
     font-weight: 600;
 }
 
@@ -264,16 +265,16 @@ label:hover {
 }
 
 
-/*Regiones-Página index*/
+/*Sección Regiones-Página index*/
 #regiones {
-    padding: 50px 0;
-    margin: 10px;
+    padding: 3.1rem 0;
+    margin: 0.6rem;
 }
 
 #regiones h2 {
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 0.6rem;
+    padding-bottom: 1.8rem;
     
 
 }
@@ -287,15 +288,15 @@ label:hover {
     width: 140px;
     height: 3px;
     background-color: currentColor;
-    top: 0.9em;
+    top: 2rem;
     transform: scale(0);
     transition: all 0.5s ease-in;
 }
 #regiones h2::before {
-    left: 200px;
+    left: 12.5rem;
 }
 #regiones h2::after {
-    right: 200px;
+    right: 12.5rem;
 }
 #regiones h2:hover::after, h2:hover::before {
 transform: scale(1);
@@ -304,10 +305,10 @@ transform: scale(1);
 #regiones .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 20px;
-    padding: 20px;
-    margin: 5px;
+    grid-auto-rows: minmax(6.2rem, auto);
+    grid-gap: 1.2rem;
+    padding: 1.2rem;
+    margin: 0.3rem;
 }
 
 #regiones .box {
@@ -375,14 +376,14 @@ transform: scale(1);
 
 /*experiencias*/
 .experiencias-texto {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     display: flex;
     text-align: center;
     flex-direction: column;
 }
 .experiencias-texto p {
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .experiencias-contenedor {
@@ -391,7 +392,7 @@ transform: scale(1);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 0.3rem;
     justify-content: space-evenly;
     align-items: center;
     max-width: 1300px;
@@ -429,9 +430,7 @@ font-family: 'Alegreya';
 transform: scale(0);
 transition: 1000ms ease;
 }
-/*.capa h3 {
-    text-align: center;
-}*/
+
 .experiencias-caja:hover .capa {
     transform: scale(1);
 }
@@ -451,11 +450,11 @@ transition: 1000ms ease;
 
     justify-content: start;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    padding-left: 50px;
+    padding-top: 6.25rem;
+    padding-bottom: 3.1rem;
+    padding-left: 3.1rem;
     width: 45%;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -464,22 +463,24 @@ transition: 1000ms ease;
     justify-content: center;
     text-align: center;
     text-decoration: none;
-    padding-right: 100px;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    width: 15%;
+    padding-right: 6.25rem;
+    padding-top: 6.25rem;
+    padding-bottom: 3.1rem;
+    width: 25%;
     color: black;
 }
 
 /* pagina Destinos*/
-h2 {
+/*h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    margin: 50px 100px;
+    margin: 3.1rem 6.25rem;
+    color: black;
 
-}
+}*/
+
 
 a {
     text-decoration: none;
@@ -516,16 +517,18 @@ a {
         .contenedor-destinos {
         position: absolute;
   
-        margin: 0 25px;
+        margin: 0 0.1rem;
         width: 100%;
-        max-width: 1300px;
-
+      /*  max-width: 1300px;*/
+      height: 98vh;/*100vh*/
         text-align: center;
-        padding: 200px 20px ;
+        padding: 12.5rem 1.25rem ;
         
         }
-        #banner-destinos h1 {
-            padding: 40px;
+       
+        
+         #banner-destinos h1 {
+            padding: 2.5rem 0;
             font-weight: 600;
         }
         @keyframes destinos {
@@ -560,8 +563,196 @@ a {
 }
 
 
+ 
+ .caja-destinos{
+    max-width: 1300px;
+    margin:1.5rem 1.8rem ;
+    padding:1.8rem;
+   /*overflow: hidden;*/
+   transition: all .2s linear;
+   text-transform: capitalize;
+    background-color: floralwhite;
+ }
+ 
+ .caja-destinos #titulo{
+    font-size: 1.9rem;
+    color:black;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+ }
+ .caja-destinos p {
+    text-align: center;
+    font-size: 1.2rem;
+    
+ }
+ 
+ .caja-destinos .caja-producto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     padding: 0.6rem ;
+    margin: 1.2rem;
+      /*  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));*/
+    gap:10px;
+    width: auto;
+ }
+ 
+ .caja-destinos .caja-producto .producto{
+    text-align: center;
+    padding:1.8rem 1.2rem;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    outline: .5px solid #ccc;
+    outline-offset: -10px;
+    cursor: pointer;
+ }
+ 
+ .caja-destinos .caja-producto .producto:hover{
+    outline: .5px solid #222;
+    outline-offset: 0;
+ }
+ 
+ .caja-destinos .caja-producto .producto img{
+    height: 150px;
+    width: 300px;
+ }
+ 
+ .caja-destinos .caja-producto .producto:hover img{
+    transform: scale(.92);
+ }
+ 
+ .caja-destinos .caja-producto .producto h3{
+    padding:.1.8rem 0;
+    font-size: 1.5rem;
+    color:black;
+    font-weight: 500;
 
-#titulo h2 {
+ }
+ 
+ .caja-destinos .caja-producto .producto:hover h3{
+    color: cadetblue;
+    
+ }
+ 
+ .caja-destinos .caja-producto .producto h6{
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Alegreya';
+ }
+ 
+ .previa-producto{
+    position: fixed;
+    top:0; left:0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ 
+ .previa-producto .previa{
+    display: none;
+    padding:1.8rem;
+    text-align: center;
+    background: whitesmoke;
+    position: relative;
+    margin:1.8rem;
+    width: 31.25rem;
+    height: 34.25rem;
+    outline: 10px solid rgb(9, 33, 46);
+    outline-offset: -10px;
+ }
+ 
+ .previa-producto .previa.active{
+    display: inline-block;
+ }
+ 
+ .previa-producto .previa img{
+    width: 26rem;
+    height: 12.5rem;
+ }
+ 
+ .previa-producto .previa .fa-xmark{
+    position: absolute;
+    top:0.6rem; 
+    right:0.9rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 1.5rem;
+ }
+ 
+ /*.products-preview .preview .fa-xmark:hover {
+    transform: rotate(90deg);
+ }*/
+ 
+ .previa-producto .previa h3{
+    color:black;
+    padding:0.3rem 0;
+    font-size: 1.75rem;
+ }
+ 
+ .previa-producto .previa .stars{
+    padding:.3rem 0;
+    font-size: .8rem;
+ }
+ 
+ .previa-producto .previa .stars i{
+    color:#000;
+ }
+ 
+ /*.products-preview .preview .stars span{
+    color:#999;
+ }*/
+ 
+ .previa-producto .previa p{
+    line-height: 1.2;
+    padding:.3rem 0;
+    font-size: 0.75rem;
+    color:black;
+ }
+ 
+ /*.products-preview .preview .price{
+    padding:1rem 0;
+    font-size: 2.5rem;
+    color:#27ae60;
+ }*/
+ 
+ .previa-producto .previa .buttons{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+ }
+ 
+ /*.products-preview .preview .buttons a{
+    flex:1 1 16rem;
+    padding:1rem;
+    font-size: 1.8rem;
+    color:#444;
+    border:.1rem solid #444;
+    text-decoration:none;
+ }*/
+ 
+ /*.products-preview .preview .buttons a.cart{
+    background: #444;
+    color:#fff;
+ }
+ 
+ .products-preview .preview .buttons a.cart:hover{
+    background: #111;
+ }
+ 
+ .products-preview .preview .buttons a.buy:hover{
+    background: #444;
+    color:#fff;
+ }*/
+
+
+/*#titulo h2 {
     font-size: 50px;
     font-weight: 500;
     justify-content: baseline;
@@ -623,7 +814,7 @@ color: crimson;
 }
 .destinos-contenedor .destinos-carta i {
     margin: 2px ;
-}
+}*/
 
 
 /*pagina regiones*/
@@ -634,11 +825,11 @@ color: crimson;
     background-position: center;
     height: 600px;
     text-align: center;
-    padding: 200px 20px;
+    padding: 12.5rem 1.25rem;
 }
 
 #banner-regiones h1 {
-    padding: 40px 0;
+    padding: 2.5rem 0;
     font-weight: 600;
 }
 
@@ -654,7 +845,7 @@ color: crimson;
 
 }
 .regiones1-contenedor{
-    padding: 50px;
+    padding: 3.1rem;
     width: 100%;
     max-width: 1300px;
     height: auto;
@@ -663,54 +854,62 @@ color: crimson;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: 'Monserrat';
+
 
 }
 .regiones1-contenedor h1 {
     font-size: 2em;
-    margin: 45px;
+    margin: 2.8rem;
 }
 .regiones1-contenedor p {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     text-align: justify;
 }
 .regiones1-contenedor .regiones1-carta {
     width: 300px;
-    height: 430px;
+    height: 384px;
+    background-color: lavender;
     border-radius: 8px;
-    box-shadow:  2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px  rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    margin: 20px;
+    margin: 2rem;
     text-align: center;
     transition: all 0.25s;
 }
 .regiones1-contenedor .regiones1-carta:hover {
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 12px 13px rgba(0, 0, 0, 0.5);
 
 }
 .regiones1-contenedor .regiones1-carta img {
-    width: 330px;
-    height: 220px;
+    width: 20rem;
+    height: 13.75rem;
 
 }
-.regiones1-contenedor .regiones1.carta h3 {
-    font-weight: 600;
-    padding: 40px 10px 5px;
+.regiones1-contenedor .regiones1-carta h3 {
+    font-weight: 500;
+    padding: 1.5rem 0.6rem 0.3rem;
+    font-size: 1.7rem;
 
 }
 .regiones1-contenedor .regiones1-carta p {
-    padding: 15px  16px 0;
-    font-size: 17px;
+    padding:   1rem ;
+    font-size: 1.1rem;
     font-weight: 300;
     text-align: justify;
+    color: black;
+    font-family: 'Alegreya';
+    text-align: center;
+
 }
 .regiones1-contenedor .regiones1-carta a {
     text-decoration: none;
     font-weight: 500;
     color: darkred;
     font-weight: bold;
+    padding: 6rem;
+    
     
 }
 
@@ -733,8 +932,8 @@ border-radius: 20px;
 }
 
 #banner-regiones2 ul {
-    margin: 0;
-    padding: 0;
+ /*   margin: 0;
+    padding: 0;*/
     display: flex;
     width: 1000%;
     animation: regiones2 50s infinite alternate ease-in-out;
@@ -756,8 +955,9 @@ position: absolute;
 width: 100%;
 max-width: 1300px;
 
+
 text-align: center;
-padding: 100px 0 ;
+padding: 6.25rem 1.25rem 0 5rem ;
 
 /*margin-left: 30px;
 padding: 100px 350px;
@@ -770,7 +970,7 @@ width: 100%;
 font-family: 'Monserrat';*/
 }
     #banner-regiones2 h1 {
-        padding: 40px;
+        padding: 2.5rem;
         font-weight: 600;
     }
 
@@ -800,19 +1000,20 @@ font-family: 'Monserrat';*/
     display: flex ;
     justify-content: center;
     flex-wrap: wrap;
-    margin:10px;
-    padding: 10px;
+    margin:0.6rem;
+    padding: 0.6rem;
     font-family: 'Alegreya';
 
 }
 .texto-regiones2 h2 {
-    padding: 20px ;
-    margin: 100px 0 20px;
+    padding: 1.25rem ;
+    margin: 6.25rem 0 1.25rem;
     font-weight: bold;
    /* text-decoration: underline;*/
     font-weight: 500;
     position: relative;
-    
+    font-family: 'Montserrat';
+    background-color: tan;    
     
 }
 
@@ -827,27 +1028,43 @@ font-family: 'Monserrat';*/
     transition: all 0.5s ease-in;
 }
 .texto-regiones2 h2::before {
-    left: 400px;
-    top: 45px;
+    left: 25rem;
+    top: 2.8rem;
 }
 .texto-regiones2 h2::after {
-    right: 400px;
-    top: 45px;
+    right: 25rem;
+    top: 2.8rem;
 }
 .texto-regiones2 h2:hover::after, h2:hover::before {
 transform: scale(1);
 }
 .texto-regiones2 p {
-    padding: 20px ;
-    margin: 10px 15px;
-    font-size: 20px;
+    padding: 0 1.25rem ;
+    margin: 0 4rem ;
+    font-size: 1.25rem;
     font-weight: 600;
     letter-spacing: 1.5px;
     line-height: 40px;
     text-align: justify;
-    text-indent: 60px;
-   
-    
+    text-indent: 4rem ;   
+}
+.botones-regiones {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 0 5rem;
+}
+
+.botones-regiones a {
+     padding: 1rem 2rem;
+      color: white;
+background-color: black ;
+border-radius: 1.3rem;
+border: 1px solid transparent;
+font-size: 1rem;
+}
+.botones-regiones a:hover {
+    background-color: darkcyan;
 }
 /*Página Contacto*/
 #banner-nosotrxs {
@@ -870,88 +1087,84 @@ transform: scale(1);
     font-weight: 400;
 
 }
-#nosotrxs {
+.nosotrxs {
+    width: 100%;
+    max-width: 1300px;
+    margin: 2rem auto;
+    padding: 2rem;
+    
+}
+.nosotrxs-contenedor {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: auto;
-    padding: auto;
-    height: 1000px;
-    /* width: 100%;
-  /*  height: 100%;*/
+    margin: 1rem ;
+    
+    height: 1100px;
+    justify-content: space-between;
+    text-align: justify;
+     
+   /*  width: 100%;
+   height: 100%;*/
 
+}
+.nosotrxs-contenedor h5 {
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+}
+.nosotrxs-contenedor p {
+    padding: 1rem;
+    margin: 1rem;
 }
 
 #icon-nosotrxs {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
+  
     width: 100%;
-    font-size: 30px;
-    padding: 30px;
-    margin: 30px;
-
-
-}
-
-.flex-1 {
-   /* display: flex;
-    flex-wrap: wrap;
-    /* background-color: aquamarine;*/
-
-   margin: 0 20px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    height: 300px;
-    width: 800px;
-}
-
-.flex-2 {
-    /*display: flex;
-    flex-wrap: wrap;
-    /* background-color: crimson;*/
-
-   margin: 0 20px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    height: 300px;
-    width: 800px;
-
-}
-
-.flex-3 {
-    /*display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /*  background-color: darkcyan;*/
-
-    margin: 0 20px;
-    
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    height: 500px;
-    width: 800px;
-}
-/*.sucursal {
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.8rem;
+    padding: 10px;
     margin: 10px;
+    text-align: center;
+
+
 }
-#map {
-    flex-direction: row;
-    flex-wrap: wrap;
+
+.nosotrxs-1 {
+ 
+    height: 50px;
+    width: 48%;
+    background-color: teal;
+}
+
+.nosotrxs-2 {
+  background-color: darkcyan;
+    height: 50px;
+    width: 48%;
+
+}
+
+.nosotrxs-3 {
+background-color: cadetblue;
+    height: 50px;
+    width: 100%;
+    padding-bottom: 2rem;
+    margin-bottom: 10rem;
+    
+}
+.nosotrxs-3 p {
+    margin: 20px;
+}
+.sucursal {
+    text-align: center;
     justify-content: center;
-    height: 450px;
-    width: 700px;
-    margin: 10px 40px;
+    
 }
-*/
+.sucursal iframe {
+    width: 35rem;
+}
+
+
 
 @media(max-width:728px) {
 header label {
@@ -1001,11 +1214,12 @@ label:hover {
 }
 .menu ul {
     flex-direction: column;
+    font-size: 1.5rem;
   
 }
 .menu li {
-    border-bottom: 1px solid white;
-    width: 100%;
+    border-bottom: 1px  solid white ;
+    width: 60vh;
     padding: 10px;
 }
 .menu  a {
@@ -1013,7 +1227,7 @@ label:hover {
 }
 .menu li a:hover {
     font-weight: 600;
-    background: rgba(11, 11, 11, 0.9);
+    background: darkcyan;
 
     border-radius: 10px;
     
@@ -1026,13 +1240,141 @@ label:hover {
 #btn-menu:checked ~ .menu {
     margin: 0;
 z-index: 100;}
+/*Sección regiones página index*/
+#regiones h2 {
+    font-size: 2.5rem;
+}
+#regiones h2::after, h2::before {
+    
+    position: absolute;
+    width: 100px;
+  height: 2px;
+    top: 2rem;
+   
+}
+#regiones h2::before {
+    left: 0.2rem;
+}
+#regiones h2::after {
+    right: 0.2rem;
+}
+/*Sección experiencia-Página index*/
+.capa h3 {
+    font-size: 3rem;
+}
+/* Página destinos*/
+#banner-destinos img {
+    object-fit: cover;
+}
+.previa-producto .previa h3 {
+    font-size: 2rem;
+}
+.previa-producto .previa h6 {
+    font-size: 1.3rem;
+}
+.previa-producto .previa p {
+    font-size: 1.1rem;
 
+}
+.previa-producto .previa img{
+    height: 150px;
+ }
+.previa-producto .previa{
+ 
+    width: 32rem;
+    height: 42rem;
+    
+ 
+ }
+ .previa-producto .previa .fa-xmark{
+    
+    top:1.2rem; 
+    right:1.5rem;
+    font-size: 2rem;
+ }
+ 
 /*estilo animacion de cada pagina region*/
 #banner-regiones2 img {
   object-fit: cover;
     
 }
-#banner-destinos img {
-    object-fit: cover;
+
+ /*Página regiones*/
+ .regiones1-contenedor .regiones1-carta {
+    width: 300px;
+    height: 350px;
+
+
 }
+
+.regiones1-contenedor .regiones1-carta h3 {
+    font-size: 2.5rem;
 }
+.regiones1-contenedor .regiones1-carta p {
+    font-size: 2rem;
+    
+
+}
+.regiones1-contenedor .regiones1-carta img {
+    width:98%;
+
+
+}
+@media (max-width:991px){
+
+    html{
+       font-size: 65%;
+    }
+    /*Página destinos*/
+    #banner-destinos img {
+        object-fit: cover;
+    }
+    .previa-producto .previa h3 {
+        font-size: 2.2rem;
+    }
+    .previa-producto .previa h6 {
+        font-size: 1.4rem;
+    }
+    .previa-producto .previa p {
+        font-size: 1.2rem;
+    
+    }
+    .previa-producto .previa img{
+        height: 170px;
+        width: 300px;
+     }
+    .previa-producto .previa{
+     
+        width: 38rem;
+        height: 45rem;
+        
+     
+     }
+     .previa-producto .previa .fa-xmark{
+        
+        top:1.2rem; 
+        right:1.5rem;
+        font-size: 2rem;
+     }
+
+    /*Página regiones*/
+
+}
+
+
+.regiones1-contenedor .regiones1-carta p {
+    font-size: 1.5rem;
+    
+
+}
+
+
+ 
+ }
+
+ 
+ @media (max-width:450px){
+ 
+ 
+ 
+ }
