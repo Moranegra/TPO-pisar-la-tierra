@@ -200,23 +200,6 @@ label:hover {
     font-weight: 500;
     padding-right: 1.8rem;
 }
-
-/*.menu ul ul {
-    background: white;
-   position: absolute;
-    transform: translateX(40%);
-    opacity: 0;
-    transition: all 0.8s;
-    display: flex;
-    flex-direction: column;
-}*/
-
-/*.menu ul li:hover ul {
-    opacity: 1;
-    transform: translateX(0%);
-}*/
-
-
 .menu li a:hover {
     font-weight: 600;
     background: rgba(31, 31, 31, 0.9);
@@ -293,10 +276,10 @@ label:hover {
     transition: all 0.5s ease-in;
 }
 #regiones h2::before {
-    left: 12.5rem;
+    left: 16rem;
 }
 #regiones h2::after {
-    right: 12.5rem;
+    right: 16rem;
 }
 #regiones h2:hover::after, h2:hover::before {
 transform: scale(1);
@@ -305,7 +288,7 @@ transform: scale(1);
 #regiones .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(6.2rem, auto);
+    grid-auto-rows: minmax(6.2rem,auto);
     grid-gap: 1.2rem;
     padding: 1.2rem;
     margin: 0.3rem;
@@ -365,12 +348,12 @@ transform: scale(1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 350px;
 }
 
-#regiones .box1 img #regiones .box2 img #regiones .box3 img #regiones .box4 img #regiones .box5 img  #regiones .box6 img {
+/*#regiones .box1 img #regiones .box2 img #regiones .box3 img #regiones .box4 img #regiones .box5 img  #regiones .box6 img {
     width: 100%;
-}
+}*/
 
 
 
@@ -663,7 +646,7 @@ a {
     margin:1.8rem;
     width: 31.25rem;
     height: 34.25rem;
-    outline: 10px solid rgb(9, 33, 46);
+    outline: 10px solid rgba(0, 100, 100, 0.9);
     outline-offset: -10px;
  }
  
@@ -678,16 +661,13 @@ a {
  
  .previa-producto .previa .fa-xmark{
     position: absolute;
-    top:0.6rem; 
-    right:0.9rem;
+    top:0.8rem; 
+    right:1rem;
     cursor: pointer;
     color:#444;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
  }
  
- /*.products-preview .preview .fa-xmark:hover {
-    transform: rotate(90deg);
- }*/
  
  .previa-producto .previa h3{
     color:black;
@@ -701,7 +681,7 @@ a {
  }
  
  .previa-producto .previa .stars i{
-    color:#000;
+    color: red;
  }
  
  /*.products-preview .preview .stars span{
@@ -751,60 +731,6 @@ a {
     color:#fff;
  }*/
 
-
-/*#titulo h2 {
-    font-size: 50px;
-    font-weight: 500;
-    justify-content: baseline;
-}
-.destinos-contenedor{
-    padding: 50px;
-    width: 100%;
-    max-width: 1300px;
-    height: auto;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: 'Montserrat';
-
-}
-
-.destinos-contenedor .destinos-carta {
-    width: 300px;
-    height: 430px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    margin: 20px;
-    padding-top: 20px;
-    text-align: center;
-    transition: all 0.25s;
-    background-color: rgba(133, 154, 207, 0.448) ;
-}
-.destinos-contenedor .destinos-carta:hover {
-    transform: translateY(-25px);
-    box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.5);
-
-}
-.destinos-contenedor .destinos-carta img {
-    width: 300px;
-    height: 180px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
-}
-.destinos-contenedor .destinos.carta h4 {
-    font-weight: 600;
-    padding: 40px 10px 5px;   
-}
-.destinos-contenedor .destinos-carta h6 {
-font-size: 14px;
-color: crimson;
-}
-
-
 .destinos-contenedor .destinos-carta p {
     padding: 0 1rem;
     font-size: 12px;
@@ -814,10 +740,10 @@ color: crimson;
 }
 .destinos-contenedor .destinos-carta i {
     margin: 2px ;
-}*/
+}
 
 
-/*pagina regiones*/
+/*Página regiones*/
 #banner-regiones {
     background: url('../media/merlo.webp');
     background-repeat: no-repeat;
@@ -827,7 +753,6 @@ color: crimson;
     text-align: center;
     padding: 12.5rem 1.25rem;
 }
-
 #banner-regiones h1 {
     padding: 2.5rem 0;
     font-weight: 600;
@@ -912,159 +837,165 @@ color: crimson;
     
     
 }
-
-
-
-
 /*Css para cada región*/
 
     
     
   
 #banner-regiones2 {
-width: 100%;
-height: 600px;
-margin: auto;
-overflow: hidden;
-position: relative;
-border-radius: 20px;
-
-}
-
-#banner-regiones2 ul {
- /*   margin: 0;
-    padding: 0;*/
-    display: flex;
-    width: 1000%;
-    animation: regiones2 50s infinite alternate ease-in-out;
-}
-
-#banner-regiones2 li {
     width: 100%;
-    list-style: none;
-}
-#banner-regiones2 img {
-    width: 100%;
-    height: 650px;
-    
-}
-
-.contenedor-regiones2 {
-position: absolute;
-
-width: 100%;
-max-width: 1300px;
-
-
-text-align: center;
-padding: 6.25rem 1.25rem 0 5rem ;
-
-/*margin-left: 30px;
-padding: 100px 350px;
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-justify-content: center;
-text-align: center;
-width: 100%;
-font-family: 'Monserrat';*/
-}
-    #banner-regiones2 h1 {
-        padding: 2.5rem;
-        font-weight: 600;
-    }
-
-@keyframes regiones2 {
-    0%{margin-left: 0;}
-    5%{margin-left: 0;}
-    10%{margin-left: -100%;}
-    15%{margin-left: -100%;}
-    20%{margin-left: -200%;}
-    25%{margin-left: -200%;}
-    30%{margin-left: -300%;}
-    35%{margin-left: -300%;}
-    40%{margin-left: -400%;}
-    45%{margin-left: -400%;}
-    50%{margin-left: -500%;}
-    55%{margin-left: -500%;}
-    60%{margin-left: -600%;}
-    65%{margin-left: -600%;}
-    70%{margin-left: -700%;}
-    75%{margin-left: -700%;}
-    80%{margin-left: -800%;}
-    85%{margin-left: -800%;}
-    90%{margin-left: -900%;}
-    100%{margin-left: -900%;}
-}
-.texto-regiones2 {
-    display: flex ;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin:0.6rem;
-    padding: 0.6rem;
-    font-family: 'Alegreya';
-
-}
-.texto-regiones2 h2 {
-    padding: 1.25rem ;
-    margin: 6.25rem 0 1.25rem;
-    font-weight: bold;
-   /* text-decoration: underline;*/
-    font-weight: 500;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
     position: relative;
-    font-family: 'Montserrat';
-    background-color: tan;    
+    border-radius: 20px;
     
-}
-
- .texto-regiones2 h2::after, h2::before {
-    content: '';
+    }
+    
+    #banner-regiones2 ul {
+     /*   margin: 0;
+        padding: 0;*/
+        display: flex;
+        width: 1000%;
+        animation: regiones2 50s infinite alternate ease-in-out;
+    }
+    
+    #banner-regiones2 li {
+        width: 100%;
+        list-style: none;
+    }
+    #banner-regiones2 img {
+        width: 100%;
+        height: 650px;
+        
+    }
+    
+    .contenedor-regiones2 {
     position: absolute;
-    width: 140px;
-    height: 3px;
-    background-color: currentColor;
-    top: 0.9em;
-    transform: scale(0);
-    transition: all 0.5s ease-in;
-}
-.texto-regiones2 h2::before {
-    left: 25rem;
-    top: 2.8rem;
-}
-.texto-regiones2 h2::after {
-    right: 25rem;
-    top: 2.8rem;
-}
-.texto-regiones2 h2:hover::after, h2:hover::before {
-transform: scale(1);
-}
-.texto-regiones2 p {
-    padding: 0 1.25rem ;
-    margin: 0 4rem ;
-    font-size: 1.25rem;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    line-height: 40px;
-    text-align: justify;
-    text-indent: 4rem ;   
-}
-.botones-regiones {
+    
+    width: 100%;
+    max-width: 1300px;
+    
+    
+    text-align: center;
+    padding: 6.25rem 1.25rem 0 5rem ;
+    
+    /*margin-left: 30px;
+    padding: 100px 350px;
     display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    margin: 0 5rem;
-}
-
-.botones-regiones a {
-     padding: 1rem 2rem;
-      color: white;
-background-color: black ;
-border-radius: 1.3rem;
-border: 1px solid transparent;
-font-size: 1rem;
-}
-.botones-regiones a:hover {
-    background-color: darkcyan;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-family: 'Monserrat';*/
+    }
+        #banner-regiones2 h1 {
+            padding: 2.5rem;
+            font-weight: 600;
+        }
+    
+    @keyframes regiones2 {
+        0%{margin-left: 0;}
+        5%{margin-left: 0;}
+        10%{margin-left: -100%;}
+        15%{margin-left: -100%;}
+        20%{margin-left: -200%;}
+        25%{margin-left: -200%;}
+        30%{margin-left: -300%;}
+        35%{margin-left: -300%;}
+        40%{margin-left: -400%;}
+        45%{margin-left: -400%;}
+        50%{margin-left: -500%;}
+        55%{margin-left: -500%;}
+        60%{margin-left: -600%;}
+        65%{margin-left: -600%;}
+        70%{margin-left: -700%;}
+        75%{margin-left: -700%;}
+        80%{margin-left: -800%;}
+        85%{margin-left: -800%;}
+        90%{margin-left: -900%;}
+        100%{margin-left: -900%;}
+    }
+    .texto-regiones2 {
+        display: flex ;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:0.6rem 0.3rem;
+        padding: 0.6rem 0.3rem;
+        font-family: 'Alegreya';
+    
+    }
+    .texto-regiones2 h2 {
+        padding: 1.25rem ;
+        margin: 6.25rem 0 1.25rem;
+        font-weight: bold;
+       /* text-decoration: underline;*/
+        font-weight: 500;
+        position: relative;
+        font-family: 'Montserrat';
+        background-color: tan;    
+        
+    }
+    
+     .texto-regiones2 h2::after, h2::before {
+        content: '';
+        position: absolute;
+        width: 140px;
+        height: 3px;
+        background-color: currentColor;
+        top: 0.9em;
+        transform: scale(0);
+        transition: all 0.5s ease-in;
+    }
+    .texto-regiones2 h2::before {
+        left: 25rem;
+        top: 2.8rem;
+    }
+    .texto-regiones2 h2::after {
+        right: 25rem;
+        top: 2.8rem;
+    }
+    .texto-regiones2 h2:hover::after, h2:hover::before {
+    transform: scale(1);
+    }
+    .texto-regiones2 p {
+        padding: 0 1.25rem ;
+        margin: 0 4rem ;
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        line-height: 40px;
+        text-align: justify;
+        text-indent: 4rem ;   
+    }
+    .botones-regiones {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        margin: 0 5rem;
+    }
+    
+    .botones-regiones a {
+         padding: 1rem 2rem;
+          color: white;
+    background-color: black ;
+    border-radius: 1.3rem;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    }
+    .botones-regiones a:hover {
+        background-color: darkcyan;
+    }
+/*Página de preguntas frecuentes*/
+#banner-faqs {
+    background: url('../media/la-pampa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    text-align: center;
+    padding: 12.5rem 1.25rem;
 }
 /*Página Contacto*/
 #banner-nosotrxs {
@@ -1074,7 +1005,7 @@ font-size: 1rem;
     background-position: center;
     height: auto;
     text-align: center;
-    padding: 200px 20px;
+    padding: 12.5rem 1.25rem;
 }
 
 #banner-nosotrxs h1 {
@@ -1164,9 +1095,82 @@ background-color: cadetblue;
     width: 35rem;
 }
 
+/*Media Queries*/
+@media screen and (max-width:991px){
 
+    html{
+       font-size: 83%;
+    }
+    /*Nav*/
+    .menu .logo {
+        font-size: 1.2rem;
+        padding: 0.3rem 0.9rem;
+    }
+    .menu ul {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    /*Seccion regiones-Index*/
+    #regiones h2 {
+        text-align: center;
+        padding-top: 0.6rem;
+        padding-bottom: 1.8rem;
+        
+    
+    }
 
-@media(max-width:728px) {
+     #regiones h2::after, h2::before {
+    
+        width: 120px;
+    
+        top: 1.8rem;
+    
+    }
+    #regiones h2::before {
+        left: 6rem;
+    }
+    #regiones h2::after {
+        right: 6rem;
+    }
+    /*Página destinos*/
+    #banner-destinos img {
+        object-fit: cover;
+    }
+    .previa-producto .previa h3 {
+        font-size: 2rem;
+    }
+    .previa-producto .previa h6 {
+        font-size: 1.2rem;
+    }
+    .previa-producto .previa p {
+        font-size: 1rem;
+    
+    }
+    .previa-producto .previa img{
+        height: 13rem;
+        width: 21rem;
+     }
+    .previa-producto .previa{
+     
+        width: 27rem;
+        height: 38rem;
+        
+     
+     }
+     .previa-producto .previa .fa-xmark{
+        
+        top:1rem; 
+        right:1.3rem;
+        font-size: 2rem;
+     }
+
+    /*Página regiones*/
+.regiones1-contenedor .regiones1-carta p {
+    font-size: 1.5rem;
+} 
+ }
+
+@media  screen and (max-width:728px) {
 header label {
     display: block;
     position: relative;
@@ -1191,7 +1195,7 @@ label:hover {
     margin-right: 32px;
     text-align: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 1.5rem;
 
 }
 .menu .logo:hover {
@@ -1214,7 +1218,7 @@ label:hover {
 }
 .menu ul {
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   
 }
 .menu li {
@@ -1242,31 +1246,33 @@ label:hover {
 z-index: 100;}
 /*Sección regiones página index*/
 #regiones h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 #regiones h2::after, h2::before {
     
     position: absolute;
-    width: 100px;
+    width: 50px;
   height: 2px;
-    top: 2rem;
+    top: 1.8rem;
    
 }
 #regiones h2::before {
-    left: 0.2rem;
+    left: 1.3rem;
 }
 #regiones h2::after {
-    right: 0.2rem;
+    right: 1.3rem;
 }
+
+
 /*Sección experiencia-Página index*/
 .capa h3 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 /* Página destinos*/
 #banner-destinos img {
     object-fit: cover;
 }
-.previa-producto .previa h3 {
+/*.previa-producto .previa h3 {
     font-size: 2rem;
 }
 .previa-producto .previa h6 {
@@ -1291,7 +1297,7 @@ z-index: 100;}
     top:1.2rem; 
     right:1.5rem;
     font-size: 2rem;
- }
+ }*/
  
 /*estilo animacion de cada pagina region*/
 #banner-regiones2 img {
@@ -1320,61 +1326,19 @@ z-index: 100;}
 
 
 }
-@media (max-width:991px){
+/*Css para cada región*/
 
-    html{
-       font-size: 65%;
-    }
-    /*Página destinos*/
-    #banner-destinos img {
-        object-fit: cover;
-    }
-    .previa-producto .previa h3 {
-        font-size: 2.2rem;
-    }
-    .previa-producto .previa h6 {
-        font-size: 1.4rem;
-    }
-    .previa-producto .previa p {
-        font-size: 1.2rem;
+.botones-regiones {
+     padding: 1rem;
     
-    }
-    .previa-producto .previa img{
-        height: 170px;
-        width: 300px;
-     }
-    .previa-producto .previa{
-     
-        width: 38rem;
-        height: 45rem;
-        
-     
-     }
-     .previa-producto .previa .fa-xmark{
-        
-        top:1.2rem; 
-        right:1.5rem;
-        font-size: 2rem;
-     }
-
-    /*Página regiones*/
-
 }
 
-
-.regiones1-contenedor .regiones1-carta p {
-    font-size: 1.5rem;
-    
-
+.botones-regiones a {
+     padding: 0.9rem  0.5rem ; 
+text-align: center;
 }
 
-
  
- }
-
+ /*@media (max-width:450px){
  
- @media (max-width:450px){
- 
- 
- 
- }
+ }*/
