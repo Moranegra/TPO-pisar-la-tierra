@@ -642,7 +642,7 @@ a {
     padding:1.8rem;
     text-align: center;
     background: whitesmoke;
-    position: relative;
+    position: absolute;
     margin:1.8rem;
     width: 31.25rem;
     height: 34.25rem;
@@ -651,7 +651,7 @@ a {
  }
  
  .previa-producto .previa.active{
-    display: inline-block;
+    display: block;
  }
  
  .previa-producto .previa img{
@@ -997,6 +997,30 @@ a {
     text-align: center;
     padding: 12.5rem 1.25rem;
 }
+.info h5 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin: 3rem 3rem 2rem;
+}
+.info .caja-info {
+    justify-content: center;
+background-color: #deb6ab;
+    padding: 1rem;
+    margin: 1.3rem;
+    flex-wrap: nowrap;
+}
+.info .caja-info summary {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.info .caja-info p {
+    text-indent: 2rem;
+    font-family: 'Alegreya';
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
 /*Página Contacto*/
 #banner-nosotrxs {
     background: url('../media/epecuen3.jpg');
@@ -1050,7 +1074,7 @@ a {
     margin: 1rem;
 }
 
-#icon-nosotrxs {
+.nosotrxs-contenedor i {
   
     width: 100%;
     font-size: 1.8rem;
@@ -1084,7 +1108,8 @@ background-color: cadetblue;
     
 }
 .nosotrxs-3 p {
-    margin: 20px;
+    margin: 0.3rem;
+    text-align: center;
 }
 .sucursal {
     text-align: center;
@@ -1165,9 +1190,13 @@ background-color: cadetblue;
      }
 
     /*Página regiones*/
-.regiones1-contenedor .regiones1-carta p {
-    font-size: 1.5rem;
-} 
+
+    .regiones1-contenedor .regiones1-carta p {
+        font-size: 1.3rem;
+        
+    
+    }
+  
  }
 
 @media  screen and (max-width:728px) {
@@ -1314,10 +1343,10 @@ z-index: 100;}
 }
 
 .regiones1-contenedor .regiones1-carta h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .regiones1-contenedor .regiones1-carta p {
-    font-size: 2rem;
+    font-size: 1.2rem;
     
 
 }
@@ -1338,7 +1367,4 @@ z-index: 100;}
 text-align: center;
 }
 
- 
- /*@media (max-width:450px){
- 
- }*/
+}
