@@ -16,10 +16,11 @@
     <header id="idheader"></header>
 
     <main class="nosotrxs">
-        <section class="nosotrxs-contenedor">
-            <article class="nosotrxs-1">
+        <div class="nosotrxs-contenedor">
+       
+                <div class="nosotrxs-article1">
                 <i id="icon-nosotrxs" class="fa-solid fa-people-group"></i>
-                <h5>Acerca de Nosotras</h5>
+                <h5>Acerca de nosotras</h5>
                 <p> Pisar La Tierra, nace hace 10 años, en un viaje mochilero entre amigas.
 
                     Nuestros servicios están pensados y desarrollados para jóvenes de distintas edades, familias y
@@ -36,22 +37,48 @@
                     dediques a disfrutar.
                     ¡Permitinos acompañarte!
                 </p>
-            </article>
-            <article class="nosotrxs-2">
+            </div>
+           
+                <div class="nosotrxs-article1">
                 <i id="icon-nosotrxs" class="fa-solid fa-handshake"></i>
                 <h5>Nuestro compromiso</h5>
-                <p>Ofrecer experiencias incleibles y precios accesibles para que puedas armar el viaje que soñaste y
-                    a
-                    tu medida. También ofrecemos viajes corparativos y grupales
-
+                <p>Ofrecer experiencias increíbles y precios accesibles para que puedas armar el viaje que soñaste y a tu medida. También ofrecemos viajes corparativos y grupales.
                 </p>
-            </article>
-            <article class="nosotrxs-3">
+            </div>
+        
+                <div class="nosotrxs-article2">
+                  
+                
+                <i id="icon-nosotrxs" class="fa-solid fa-people-group"></i>
+                <h5 class="tag"><span> Contactanos </span></h5>
+                         <p>Dejanos tu mensaje y te contactaremos a la brevedad!</p>
+                    
+                         <form action="https://formspree.io/f/xeqdzolv" method="POST">
+                            <div>                                          
+                                <label for="name"> Nombre completo: <span>*</span></label>
+                                <input name="name" required type="text" id="name" placeholder="Nombre y apellido">
+                            </div><br> 
+                            <div> 
+                                <label for="email"> Correo electrónico: <span>*</span></label>
+                                <input name="email" type="text" id="email" required placeholder="*****@gmail.com">
+                            </div><br>  
+                            <div> 
+                                <label for="message"> Mensaje: </label>
+                                <textarea id="message" name="message" cols="30" rows="10" placeholder="Ingrese aquí su consulta"></textarea>
+                            </div><br>  
+                            <div>
+                                <button type="submit" class="btn primary full"> Enviar </button>
+                            </div><br> 
+                        </form>
+                        <script src="formulario.js"></script> 
+                </div>
+                                   
+            <div class="nosotrxs-article2">
                 <i id="icon-nosotrxs" class="fa-solid fa-location-dot"></i>
                 <h5>Nuestras oficinas</h5>
                 <p>Nuestras sucursales están ubicadas en la Ciudad Autónoma de Buenos Aires(CABA)</p>
-                <article class="sucursal">
-                    <article class="sucursal-1">
+                <div class="sucursal">
+                    <div class="sucursal-1">
                         <h6>Sucursal CABA</h6>
                         <address>
                             <p>Av.Roque Saenz Peña 786<br>
@@ -61,19 +88,18 @@
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9288708958265!2d-58.377698499999994!3d-34.6059601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccace06778fdd%3A0xc2d803e529baeee0!2sAv.%20Pres.%20Roque%20S%C3%A1enz%20Pe%C3%B1a%20786%2C%20C1067%20CABA!5e0!3m2!1ses-419!2sar!4v1665363759389!5m2!1ses-419!2sar"
                             width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </article>
-                </article>
-
-
-            </article>
+                    </div>
+                <div>
+            </div>
             <!--<script src="geolocalizacion.js"></script>
-<script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>-->
-        </section>
+<script src="https://maps.googleapis.com/maps/api/js? key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>-->
+        
+           </div>
     </main>
     
     <footer id="idfooter"></footer>
     <script src="script.js"></script>
+    
 
 </body>
 </html>

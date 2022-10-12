@@ -27,7 +27,6 @@ document.getElementById("idheader").innerHTML = `
 
 document.getElementById("idfooter").innerHTML = `
         <p>Pisar La Tierra &copy copyright 2022</p>
-
         <a href="#" class="facebook"><i id="icon-redes" class="fa-brands fa-square-facebook"></i> Facebook</a>
         <a href="#" class="instagram"><i id="icon-redes" class="fa-brands fa-square-instagram"></i> Instagram</a>
         <a href="https://web.whatsapp.com/" class="whatsapp"><i id="icon-redes" class="fa-brands fa-whatsapp"></i>

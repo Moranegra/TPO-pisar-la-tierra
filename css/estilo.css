@@ -7,7 +7,8 @@
     box-sizing: border-box;
 }
 
-/*Main estilos*/
+/*MAIN*/
+
 html,
 body {
     font-family: 'Montserrat', sans-serif;
@@ -46,9 +47,8 @@ h6 {
     font-size: 1rem;
     margin: 10px 0;
     line-height: 1.2em;
-    
-}
 
+}
 
 p {
     font-size: 1rem;
@@ -69,9 +69,7 @@ ul {
     max-width: 130rem;
     overflow: auto;
     padding: 0 0.5rem;
-    
 }
-
 
 .muestra-1 {
     font-size: 5rem;
@@ -174,8 +172,6 @@ label:hover {
     padding-top: 2px;
     padding-right: 50px;*/
     font-size: 1.2rem;
-    
-    
 }
 
 .menu i {
@@ -470,8 +466,6 @@ a {
 
 }
 
-
-
     #banner-destinos {
         width: 100%;
         height: 600px;
@@ -544,8 +538,6 @@ a {
     color: black;
 
 }
-
-
  
  .caja-destinos{
     max-width: 1300px;
@@ -564,11 +556,11 @@ a {
     text-transform: uppercase;
     text-align: center;
  }
+
  .caja-destinos p {
     text-align: center;
     font-size: 1.2rem;
-    
- }
+}
  
  .caja-destinos .caja-producto{
     display: flex;
@@ -611,12 +603,10 @@ a {
     font-size: 1.5rem;
     color:black;
     font-weight: 500;
-
  }
  
  .caja-destinos .caja-producto .producto:hover h3{
     color: cadetblue;
-    
  }
  
  .caja-destinos .caja-producto .producto h6{
@@ -634,7 +624,6 @@ a {
     display: none;
     align-items: center;
     justify-content: center;
-    
  }
  
  .previa-producto .previa{
@@ -667,7 +656,6 @@ a {
     color:#444;
     font-size: 1.7rem;
  }
- 
  
  .previa-producto .previa h3{
     color:black;
@@ -779,13 +767,13 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
-
 }
+
 .regiones1-contenedor h1 {
     font-size: 2em;
     margin: 2.8rem;
 }
+
 .regiones1-contenedor p {
     font-size: 1.2em;
     margin-bottom: 1.25rem;
@@ -839,9 +827,6 @@ a {
 }
 /*Css para cada región*/
 
-    
-    
-  
 #banner-regiones2 {
     width: 100%;
     height: 600px;
@@ -849,7 +834,6 @@ a {
     overflow: hidden;
     position: relative;
     border-radius: 20px;
-    
     }
     
     #banner-regiones2 ul {
@@ -997,7 +981,9 @@ a {
     text-align: center;
     padding: 12.5rem 1.25rem;
 }
-/*Página Contacto*/
+
+/*PAGINA CONTACTO*/
+
 #banner-nosotrxs {
     background: url('../media/epecuen3.jpg');
     background-repeat: no-repeat;
@@ -1016,81 +1002,54 @@ a {
 #banner-nosotrxs h6,
 #banner-nosotrxs .thinner {
     font-weight: 400;
+}
 
-}
 .nosotrxs {
-    width: 100%;
-    max-width: 1300px;
-    margin: 2rem auto;
-    padding: 2rem;
-    
+    margin: 0% 5%;
 }
+
 .nosotrxs-contenedor {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    margin: 1rem ;
-    
-    height: 1100px;
-    justify-content: space-between;
-    text-align: justify;
-     
-   /*  width: 100%;
-   height: 100%;*/
-
-}
-.nosotrxs-contenedor h5 {
+    width: 100%;
     justify-content: center;
     text-align: center;
-    padding: 2rem;
-    margin: auto;
+    padding:1rem;
 }
-.nosotrxs-contenedor p {
+
+.nosotrxs-article1 {
+    width: 50%;
+    height: auto;
+    padding: 2rem;
+    border-radius: 30px;
+}
+
+.nosotrxs-article2 {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    border-radius: 30px;
+}
+
+.nosotrxs-contenedor h5 {
+    background-color: teal;
+    width: 250px;
+}
+
+.nosotrxs-contenedor h5, p {
     padding: 1rem;
     margin: 1rem;
+    width: 100%;
 }
 
 #icon-nosotrxs {
-  
     width: 100%;
     font-size: 1.8rem;
     padding: 10px;
     margin: 10px;
     text-align: center;
-
-
 }
 
-.nosotrxs-1 {
- 
-    height: 50px;
-    width: 48%;
-    background-color: teal;
-}
-
-.nosotrxs-2 {
-  background-color: darkcyan;
-    height: 50px;
-    width: 48%;
-
-}
-
-.nosotrxs-3 {
-background-color: cadetblue;
-    height: 50px;
-    width: 100%;
-    padding-bottom: 2rem;
-    margin-bottom: 10rem;
-    
-}
-.nosotrxs-3 p {
-    margin: 20px;
-}
-.sucursal {
-    text-align: center;
-    justify-content: center;
-    
-}
 .sucursal iframe {
     width: 35rem;
 }
@@ -1115,17 +1074,13 @@ background-color: cadetblue;
         text-align: center;
         padding-top: 0.6rem;
         padding-bottom: 1.8rem;
-        
-    
     }
 
      #regiones h2::after, h2::before {
-    
         width: 120px;
-    
         top: 1.8rem;
-    
     }
+
     #regiones h2::before {
         left: 6rem;
     }
@@ -1334,11 +1289,6 @@ z-index: 100;}
 }
 
 .botones-regiones a {
-     padding: 0.9rem  0.5rem ; 
-text-align: center;
-}
-
- 
- /*@media (max-width:450px){
- 
- }*/
+     padding: 0.9rem  0.5rem; 
+    text-align: center;
+}}
