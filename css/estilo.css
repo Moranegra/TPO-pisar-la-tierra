@@ -71,6 +71,22 @@ ul {
     padding: 0 0.5rem;
     
 }
+.contenedor    h1 {
+padding: 2.5rem 0;
+font-weight: 600;
+}
+
+.contenedor h6,
+.contenedor .thinner {
+font-weight: 400;
+
+}
+
+.contenedor a {
+text-transform: capitalize;
+font-style: italic;
+
+}
 
 
 .muestra-1 {
@@ -137,7 +153,6 @@ nav {
     padding-left: 20px;
     height: auto;
     display: flex;
-/*    flex-direction: row;*/
     justify-content: space-between;
 }
 
@@ -245,7 +260,7 @@ label:hover {
     text-transform: capitalize;
     font-style: italic;
 
-}
+}*/
 
 
 /*Sección Regiones-Página index*/
@@ -276,10 +291,10 @@ label:hover {
     transition: all 0.5s ease-in;
 }
 #regiones h2::before {
-    left: 16rem;
+    left: 9rem;
 }
 #regiones h2::after {
-    right: 16rem;
+    right: 9rem;
 }
 #regiones h2:hover::after, h2:hover::before {
 transform: scale(1);
@@ -424,8 +439,6 @@ transition: 1000ms ease;
 
 .footer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     margin-top: auto;
 }
 
@@ -453,16 +466,7 @@ transition: 1000ms ease;
     color: black;
 }
 
-/* pagina Destinos*/
-/*h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    margin: 3.1rem 6.25rem;
-    color: black;
-
-}*/
+/* Página Destinos*/
 
 
 a {
@@ -475,7 +479,7 @@ a {
     #banner-destinos {
         width: 100%;
         height: 600px;
-        margin: auto;
+        margin: auto ;
         overflow: hidden;
         position: relative;
         border-radius: 20px;
@@ -497,23 +501,48 @@ a {
             height: 650px;
             
         }
+         
+     
+    .contenedor-destinos h1 {
+        padding: 2.5rem 0;
+        font-weight: 600;
+    }
+    
+    .contenedor-destinos h6,
+    .contenedor-destinos .thinner {
+        font-weight: 400;
+    
+    }
+    
+    #banner-destinos a {
+        text-transform: capitalize;
+        font-style: italic;
+    
+    }
+        
+       /* #banner-destinos h1 {
+            padding: 2.5rem 0;
+            font-weight: 600;
+        }
+        #banner-destinos h6,
+#banner-destinos .thinner {
+    font-weight: 400;
+    color: black;
+
+}*/
+
         .contenedor-destinos {
         position: absolute;
   
         margin: 0 0.1rem;
         width: 100%;
-      /*  max-width: 1300px;*/
-      height: 98vh;/*100vh*/
+        max-width: 1300px;
+      height: 100vh;
         text-align: center;
         padding: 12.5rem 1.25rem ;
         
         }
-       
-        
-         #banner-destinos h1 {
-            padding: 2.5rem 0;
-            font-weight: 600;
-        }
+      
         @keyframes destinos {
             0%{margin-left: 0;}
             5%{margin-left: 0;}
@@ -538,20 +567,12 @@ a {
         }
         
 
-#banner-destinos h6,
-#banner-destinos .thinner {
-    font-weight: 400;
-    color: black;
-
-}
-
-
  
  .caja-destinos{
     max-width: 1300px;
     margin:1.5rem 1.8rem ;
     padding:1.8rem;
-   /*overflow: hidden;*/
+   overflow: hidden;
    transition: all .2s linear;
    text-transform: capitalize;
     background-color: floralwhite;
@@ -564,6 +585,7 @@ a {
     text-transform: uppercase;
     text-align: center;
  }
+
  .caja-destinos p {
     text-align: center;
     font-size: 1.2rem;
@@ -576,10 +598,16 @@ a {
     justify-content: center;
      padding: 0.6rem ;
     margin: 1.2rem;
-      /*  display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));*/
-    gap:10px;
+         gap:10px;
     width: auto;
+ }
+ .caja-destinos .caja-producto h4 {
+width: 100%;
+text-align: center;
+font-weight: 500;
+padding-top: 1rem;
+padding-bottom: 0.5rem;
+font-family: 'Alegreya', 'Montserrat', sans-serif;
  }
  
  .caja-destinos .caja-producto .producto{
@@ -681,57 +709,31 @@ a {
  }
  
  .previa-producto .previa .stars i{
-    color: red;
+    color: lawngreen;
  }
  
- /*.products-preview .preview .stars span{
-    color:#999;
- }*/
  
  .previa-producto .previa p{
     line-height: 1.2;
-    padding:.3rem 0;
+    padding:.3rem 0 0 0;
     font-size: 0.75rem;
     color:black;
  }
  
- /*.products-preview .preview .price{
-    padding:1rem 0;
-    font-size: 2.5rem;
-    color:#27ae60;
- }*/
  
- .previa-producto .previa .buttons{
-    display: flex;
-    gap:10px;
-    flex-wrap: wrap;
-    margin-top: 0.75rem;
- }
- 
- /*.products-preview .preview .buttons a{
-    flex:1 1 16rem;
-    padding:1rem;
-    font-size: 1.8rem;
-    color:#444;
-    border:.1rem solid #444;
-    text-decoration:none;
- }*/
- 
- /*.products-preview .preview .buttons a.cart{
-    background: #444;
-    color:#fff;
- }
- 
- .products-preview .preview .buttons a.cart:hover{
-    background: #111;
- }
- 
- .products-preview .preview .buttons a.buy:hover{
-    background: #444;
-    color:#fff;
- }*/
+.previa-producto .previa a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Alegreya', 'Montserrat', sans-serif;
 
-.destinos-contenedor .destinos-carta p {
+}
+.previa-producto .previa a:hover {
+    color: teal;
+}
+ 
+
+/*.destinos-contenedor .destinos-carta p {
     padding: 0 1rem;
     font-size: 12px;
     font-weight: 400;
@@ -740,7 +742,7 @@ a {
 }
 .destinos-contenedor .destinos-carta i {
     margin: 2px ;
-}
+}*/
 
 
 /*Página regiones*/
@@ -749,11 +751,11 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: auto;
     text-align: center;
     padding: 12.5rem 1.25rem;
 }
-#banner-regiones h1 {
+/*#banner-regiones h1 {
     padding: 2.5rem 0;
     font-weight: 600;
 }
@@ -768,7 +770,7 @@ a {
     text-transform: capitalize;
     font-style: italic;
 
-}
+}*/
 .regiones1-contenedor{
     padding: 3.1rem;
     width: 100%;
@@ -782,9 +784,15 @@ a {
 
 
 }
-.regiones1-contenedor h1 {
+#regiones h1 {
     font-size: 2em;
-    margin: 2.8rem;
+    margin: 2rem 0 0 0 ;
+    text-align: center;
+    font-weight: 600;
+    
+}
+.regiones1-contenedor h5 {
+    margin: 1rem;
 }
 .regiones1-contenedor p {
     font-size: 1.2em;
@@ -878,17 +886,8 @@ a {
     
     
     text-align: center;
-    padding: 6.25rem 1.25rem 0 5rem ;
+    padding: 6.25rem 1.25rem 0 2rem ;
     
-    /*margin-left: 30px;
-    padding: 100px 350px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    font-family: 'Monserrat';*/
     }
         #banner-regiones2 h1 {
             padding: 2.5rem;
@@ -960,8 +959,8 @@ a {
     transform: scale(1);
     }
     .texto-regiones2 p {
-        padding: 0 1.25rem ;
-        margin: 0 4rem ;
+        padding: 0 1rem ;
+        margin: 0 2rem ;
         font-size: 1.25rem;
         font-weight: 600;
         letter-spacing: 1.5px;
@@ -993,10 +992,27 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: auto;
+    height: 600px;
     text-align: center;
     padding: 12.5rem 1.25rem;
 }
+
+/*#banner-faqs h1 {
+padding: 2.5rem 0;
+font-weight: 600;
+}
+
+#banner-faqs h6,
+#banner-faqs .thinner {
+font-weight: 400;
+
+}
+
+#banner-faqs a {
+text-transform: capitalize;
+font-style: italic;
+
+}*/
 .info h5 {
     display: flex;
     justify-content: center;
@@ -1023,16 +1039,16 @@ background-color: #deb6ab;
 }
 /*Página Contacto*/
 #banner-nosotrxs {
-    background: url('../media/epecuen3.jpg');
+    background: url('../media/floralis.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: auto;
+    height: 600px;
     text-align: center;
     padding: 12.5rem 1.25rem;
 }
 
-#banner-nosotrxs h1 {
+/*#banner-nosotrxs h1 {
     padding: 40px 0;
     font-weight: 600;
 }
@@ -1042,86 +1058,181 @@ background-color: #deb6ab;
     font-weight: 400;
 
 }
-.nosotrxs {
-    width: 100%;
-    max-width: 1300px;
-    margin: 2rem auto;
+.contacto {
+        margin: 2rem;
+    height: 500px;
+   /* width: 100%;*/
+ /*   max-width: 1300px;
+    text-align: center;
+}*/
+.contacto {
+    background-color: burlywood;
+    height: 50rem;
+    margin: 2rem;
+}
+.contacto h2 {
+    
+    font-weight: 600;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 2rem;
+}
+.contacto p {
+    font-size: 1.2rem;
+    font-weight: 500;
     padding: 2rem;
-    
 }
-.nosotrxs-contenedor {
+.contacto .form {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 1rem ;
-    
-    height: 1100px;
-    justify-content: space-between;
-    text-align: justify;
-     
-   /*  width: 100%;
-   height: 100%;*/
-
-}
-.nosotrxs-contenedor h5 {
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 2rem;
+    align-items: center;
+    width: 42rem;
     margin: auto;
+    height: 30rem;
+    border: 1px solid black;
+background-image: url('../media/atardecer-cordoba.jpg');
 }
-.nosotrxs-contenedor p {
-    padding: 1rem;
+
+
+.form label {
+    width: 95%;
+    height: 1.5rem;
+    margin: 0 1rem 0 1rem ;
+    text-align: center;
+}
+.form input, .form textarea {
+    width:95%;
+    margin: 0 1rem 0 1rem ;
+    border-radius: 6px;
+    border: black solid 1px;
+}
+.form button{
+    margin: 1rem;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 6px;
+    height: 3rem;
+   
+        padding: 0 1.5 1 1.5rem;
+      
+        color: black;
+        background-color: darkgray;
+        border: transparent;
+
+}
+.nosotras{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+.nosotras i {
     margin: 1rem;
 }
-
-.nosotrxs-contenedor i {
-  
-    width: 100%;
-    font-size: 1.8rem;
-    padding: 10px;
-    margin: 10px;
+.nosotras h5 {
+    margin: 1rem;
+    background-color: darkcyan;
+}
+.nosotras .flex-1  {
+    width: 48%;
     text-align: center;
-
-
-}
-
-.nosotrxs-1 {
- 
-    height: 50px;
-    width: 48%;
-    background-color: teal;
-}
-
-.nosotrxs-2 {
-  background-color: darkcyan;
-    height: 50px;
-    width: 48%;
-
-}
-
-.nosotrxs-3 {
-background-color: cadetblue;
-    height: 50px;
-    width: 100%;
-    padding-bottom: 2rem;
-    margin-bottom: 10rem;
+    padding-left: 2rem;
     
 }
-.nosotrxs-3 p {
-    margin: 0.3rem;
+.nosotras .flex-2 {
+    width: 48%;
     text-align: center;
+    padding-left: 2rem;
+
 }
-.sucursal {
+.nosotras .flex-3 {
+    width: 100%;
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 1.5rem;
     
-}
-.sucursal iframe {
-    width: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .flex-3 h5, p {
+                text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    address, h6 {
+        text-align: center;
+        padding: 0.5rem ;
+        margin: 0.5rem;
+        
+    }
+    
+/*Formulario de consulta paquetes*/
+
+.fondo {
+    background-image:url('../media/ventana.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
 }
 
+    
+form  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25rem;
+    height: 26rem;
+    margin: auto;
+    margin-top: 5rem;
+    border: solid 1px;
+    background-color: transparent;
+    border-radius: 10px;
+box-shadow: 1px -1px 17px 0px rgba(0, 0, 0, 0.75);
+font-family: 'Alegreya';
+}
+form h3, h6 {
+    text-align: center;
+    width: 100%;
+}
+input, select {
+    font-family: 'Montserrat', 'Alegreya';
+    font-weight: 600;
+}
+input {
+    width: 23rem;
+    height: 2rem;
+    margin:1rem ;
+    
+}
+ select {
+    width: 23rem;
+    height: 2rem;
+    margin-left: 1rem ;
+}
+ textarea {
+    resize: none;
+    width: 23rem;
+    margin: 1rem;
+
+}
+ button {
+    width: 100px;
+    margin-left: 4.2rem;
+    margin-bottom: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0px;
+    padding: 10px 5px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: space-around;
+    }
 /*Media Queries*/
-@media screen and (max-width:991px){
+@media screen and (max-width:992px){
 
     html{
        font-size: 83%;
@@ -1196,7 +1307,56 @@ background-color: cadetblue;
         
     
     }
-  
+    /*Página contacto*/
+    .form label {
+
+        height: 1.5rem;
+    
+    
+       
+        font-size: 1.2rem;
+    }
+   /*Formulario Consulta Paquetes*/
+   form  {
+        
+    width: 30rem;
+    height: 30rem;
+
+        margin: 5rem;
+        margin: 10rem auto;
+        
+    }
+    form h3, h6 {
+        font-size: 1.5rem;
+       
+    }
+
+    input {
+        width: 100%;
+        height: 2rem;
+        margin:1rem ;
+        
+    }
+     select {
+        width: 100%;
+        height: 2rem;
+        margin:0 1rem;
+    }
+     textarea {
+        width: 100%;
+        margin: 1rem;
+    
+    }
+     button {
+        width: 100px;
+        margin: auto;
+        padding: auto;
+
+        
+    }
+
+
+
  }
 
 @media  screen and (max-width:728px) {
@@ -1301,38 +1461,8 @@ z-index: 100;}
 #banner-destinos img {
     object-fit: cover;
 }
-/*.previa-producto .previa h3 {
-    font-size: 2rem;
-}
-.previa-producto .previa h6 {
-    font-size: 1.3rem;
-}
-.previa-producto .previa p {
-    font-size: 1.1rem;
 
-}
-.previa-producto .previa img{
-    height: 150px;
- }
-.previa-producto .previa{
- 
-    width: 32rem;
-    height: 42rem;
-    
- 
- }
- .previa-producto .previa .fa-xmark{
-    
-    top:1.2rem; 
-    right:1.5rem;
-    font-size: 2rem;
- }*/
- 
-/*estilo animacion de cada pagina region*/
-#banner-regiones2 img {
-  object-fit: cover;
-    
-}
+
 
  /*Página regiones*/
  .regiones1-contenedor .regiones1-carta {
@@ -1351,12 +1481,18 @@ z-index: 100;}
 
 }
 .regiones1-contenedor .regiones1-carta img {
-    width:98%;
+    width:90%;
 
 
 }
 /*Css para cada región*/
 
+ 
+
+#banner-regiones2 img {
+    object-fit: cover;
+      
+  }
 .botones-regiones {
      padding: 1rem;
     
@@ -1366,5 +1502,508 @@ z-index: 100;}
      padding: 0.9rem  0.5rem ; 
 text-align: center;
 }
+.texto-regiones2 h2::after, h2::before {
+    
+    width: 60px;
+    height: 2px;
+  
+}
 
+
+
+
+/*Página contacto*/
+.contacto {
+    height: 50rem;
+    
+}
+.contacto .form {
+ 
+    width: 500px;
+    
+ 
+}
+.form label {
+
+    height: 2rem;
+
+
+   
+    font-size: 1.5rem;
+}
+
+
+.nosotras{
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nosotras .flex-1  {
+    width: 100%;
+    padding: 0 3rem 0 3rem;
+}
+.nosotras .flex-2 {
+    width: 100%;
+    padding: 0 3rem 0 3rem;
+    
+  
+}
+.nosotras .flex-3 {
+    width: 100%;
+    padding: 0 3rem 0 3rem;
+    
+    }
+    
+
+  .mapa iframe {
+    width: 400px;
+    height: 200px;
+  }
+  form  {
+
+    height: 30rem;
+  
+}
+form h3, h6 {
+    
+    padding: 0.5rem 0 0 0;
+}
+
+ button {
+    width: 100px;
+    margin-left: 3.4rem;
+   
+  
+    }
+}
+@media screen and (max-width:576px){
+    html {
+        font-size: 50%;
+    }
+
+    .contenedor    h1 {
+  
+    font-size: 10rem;
+    }
+    
+    .contenedor h6,
+    .contenedor .thinner {
+    font-weight: 400;
+    }
+    
+     header label {
+        
+
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+        background-color: black;
+       
+    }
+    header label:hover {
+        background-color: black;
+    }
+    
+    .menu .logo {
+       
+        margin-top: 300px;   
+        
+        font-size: 2rem;
+    
+    }
+    .menu .logo:hover {
+        background: black;
+
+    }
+    .menu {
+    padding: 70px 30px;   
+     
+    }
+    .menu ul {
+    
+        font-size: 1.7rem;
+      
+    }
+ 
+    
+    .btn {
+        
+        font-size: 12px;
+        padding: 1rem 2rem;
+      
+    }
+    
+    .btn-small {
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+  
+    
+    
+    /*Banner*/
+    
+    #banner {
+        
+        height: 98vh;
+        padding-top: 15rem;
+    }
+    
+
+ /*Sección Regiones-Página index*/
+#regiones {
+    padding: 3.1rem 1rem;
+    margin: 1rem;
+}
+
+
+#regiones h2 {
+    font-size: 2.7rem;
+}
+#regiones p {
+    font-size: 1.7rem;
+}
+ #regiones h2::after, h2::before {
+    
+    width: 50px;
+    height: 1px;
+    
+    top: 2.5rem;
+    
+}
+#regiones h2::before {
+    left: 1rem;
+}
+#regiones h2::after {
+    right: 0.5rem;
+}
+
+
+.experiencias-texto p {
+  font-size: 1.5rem;
+}
+.experiencias-caja .capa h3 {
+    font-size: 3rem;
+}
+
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    margin-top: auto;
+}
+
+.footer p {
+
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.footer a {
+    
+align-items: center;
+padding: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+    
+}
+   
+ /*Página Destinos*/   
+ .contenedor-destinos {
+
+ padding-top: 15.2rem; 
+}  
+.contenedor-destinos h1 {
+    font-size: 10rem;
+}
+
+ 
+ .caja-destinos #titulo{
+    font-size: 2.5rem;
+    font-weight: 500;
+  
+ }
+
+ 
+ .caja-destinos p {
+    font-size: 1.5rem;
+    
+ }
+ .caja-destinos h6 {
+    font-size: 1.5rem;
+ }
+ 
+
+ .caja-destinos .caja-producto h4 {
+ font-size: 2.2rem;}
+ 
+ .caja-destinos .caja-producto .producto h3{
+   
+    font-size: 1.8rem;
+ } 
+ .caja-destinos .caja-producto .producto h6{
+    font-size: 1.5rem;
+
+ }
+ 
+ .previa-producto{
+    position: fixed;
+    top:0; left:0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ 
+ .previa-producto .previa{
+ 
+    width: 40rem;
+    height: 50rem;
+  
+ }
+ 
+
+ 
+ .previa-producto .previa img{
+    padding-top: 1rem;
+    width: 32rem;
+    height: 17rem;
+ }
+ 
+ .previa-producto .previa .fa-xmark{
+    
+    top:1.5rem; 
+    right:2rem;
+    cursor: pointer;
+    font-size: 2.5rem;
+ }
+ 
+ 
+ .previa-producto .previa h3{
+    font-size: 2.5rem;
+ }
+ 
+ .previa-producto .previa .stars{
+    
+    font-size: 1.5rem;
+ }
+ 
+ .previa-producto .previa p{
+    line-height: 1.2;
+    padding:.3rem 0;
+    font-size: 1.5rem;
+    color:#444;
+ }
+ 
+/*Página regiones*/
+#banner-regiones {
+    height: 100vh;
+    padding-top: 15rem;
+}
+
+#regiones h1 {
+    font-size: 3rem;
+}
+.regiones1-contenedor h5 {
+    font-size: 2rem;
+}
+
+.regiones1-contenedor p {
+    font-size: 2.5em;
+
+}
+.regiones1-contenedor .regiones1-carta {
+    width: 250px;
+    height: 300px;
+  
+}
+.regiones1-contenedor .regiones1-carta img {
+    width: 27rem;
+    height: 17rem;
+
+}
+.regiones1-contenedor .regiones1-carta h3 {
+
+    font-size: 2.5rem;
+
+}
+.regiones1-contenedor .regiones1-carta p {
+    font-size: 2rem;
+
+
+}
+#banner-faqs {
+    height: 100vh;
+    padding-top: 15rem;
+}
+
+
+.info h5 {
+   font-size: 2rem;
+
+}
+
+.info .caja-info summary {
+    font-size: 2rem;
+    
+}
+.info .caja-info p {
+
+    font-size: 1.7rem;
+    
+}
+.info .caja-info h6 {
+    font-size: 1.5rem;
+}
+/*Página Contacto*/
+#banner-nosotrxs {
+    height: 100vh;
+    padding-top: 15rem;
+}
+.contacto{
+    height: 70rem;
+}
+.contacto .form {
+      
+    height: 45rem;
+    
+}
+
+#form {
+    width:100%;
+    padding: 1rem;
+    
+}
+
+.form label {
+
+    height: 2.2rem;
+
+
+   
+    font-size: 2rem;
+}
+.form input, .form textarea {
+    
+    padding: 1.5rem;    
+}
+.form button{
+    
+    
+    height: 4rem;
+
+
+}
+
+.nosotras i {
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.nosotras h5 {
+    font-size: 2rem;
+}
+.nosotras p {
+    font-size: 2rem;
+}
+.nosotras .flex-1  {
+    width: 100%;
+}
+.nosotras .flex-2 {
+    width: 100%;
+    
+
+}
+
+    .flex-3  p {
+ font-size: 2rem;
+    }
+    .flex-3 h6 {
+       font-size: 1.5rem;
+       padding-top: 1rem;
+       
+        
+    }
+.mapa {
+       width:100%;
+    }
+    .mapa iframe {
+        width: 100%;
+    }
+/* para cada región*/
+#banner-regiones2  h1 {
+    padding-top: 30rem;
+}
+.texto-regiones2 h2 {
+    font-size: 2rem;
+}
+    .texto-regiones2 p {
+        
+        font-size: 2rem;
+        font-weight: 300;
+   
+    }
+    .botones-regiones {
+        
+        justify-content: space-evenly;
+        
+        margin: 0 1.5rem;
+    }
+    
+    .botones-regiones a {
+
+    font-size: 1.5rem;
+    }
+
+    /*Formulario Consulta Paquetes*/
+     /*Formulario Consulta Paquetes*/
+     form  {
+        
+        width: 35rem;
+        height: 50rem;
+        margin-top: 15rem;
+        margin-left: 10rem;
+        
+    }
+    form h3, h6 {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0rem;
+    }
+
+    input {
+        width: 32rem;
+        height: 4rem;
+        margin:2rem ;
+        
+    }
+     select {
+        width: 32rem;
+        height: 4rem;
+        margin:0 2rem 0 2rem ;
+    }
+     textarea {
+        resize: none;
+        width: 32rem;
+        margin: 2rem;
+    
+    }
+     button {
+        width: 100px;
+        margin-left: 3.2rem;
+        
+        font-size: 1.5rem;
+        
+    }
 }

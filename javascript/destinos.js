@@ -19,3 +19,4 @@ previaCaja.forEach(close =>{
       previaContenedor.style.display = 'none';
     };
   });
+
