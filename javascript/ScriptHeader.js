@@ -25,7 +25,7 @@ var Regiones = document.getElementById("Regiones");
 var Info = document.getElementById("Info");
 var Contact = document.getElementById("Contact");
 
-if (Url == '/destinos.html') {
+if (Url == '/destinos.html' || Url == '/formulario-paquete.html') {
 
    Destinos.style.textDecoration = 'underline'; 
 }
