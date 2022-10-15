@@ -440,8 +440,22 @@ transition: 1000ms ease;
 .footer {
     display: flex;
     margin-top: auto;
-}
 
+    /*se agregan paar reemplazar los de debajo*/
+    padding-top: 6.25rem;
+    padding-bottom: 3.1rem;
+    justify-content: space-around;
+    color: black;
+    align-items: center;
+}
+.footer p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.footer a { 
+    color: black;}
+
+/*
 .footer p {
 
     justify-content: start;
@@ -455,7 +469,6 @@ transition: 1000ms ease;
 }
 
 .footer a {
-    
     justify-content: center;
     text-align: center;
     text-decoration: none;
@@ -465,7 +478,7 @@ transition: 1000ms ease;
     width: 25%;
     color: black;
 }
-
+*/
 /* Página Destinos*/
 
 
@@ -1694,9 +1707,22 @@ form h3, h6 {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
-    margin-top: auto;
+   }
+
+.footer p {
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 16px;
 }
 
+.footer a {
+    
+    padding: 2rem;
+    font-size: 1.5rem;
+            
+    }
+/*
 .footer p {
 
     justify-content: center;
@@ -1715,7 +1741,7 @@ padding: 2rem;
     width: 100%;
     
 }
-   
+   */
  /*Página Destinos*/   
  .contenedor-destinos {
 
