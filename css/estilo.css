@@ -1231,6 +1231,9 @@ input {
     cursor: pointer;
     justify-content: space-around;
     }
+
+
+
 /*Media Queries*/
 @media screen and (max-width:992px){
 
@@ -1426,10 +1429,6 @@ label:hover {
     
 }
 
-
-/*#btn-menu {
-    display: block;
-}*/
 #btn-menu:checked ~ .menu {
     margin: 0;
 z-index: 100;}

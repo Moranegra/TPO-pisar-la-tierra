@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id="favicon">
+    <link rel="icon" href="favicon1.ico" type="image/x-icon">
     <title>Pisar la tierra | Contacto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/estilo.css">
@@ -45,27 +45,25 @@
         <section class="contacto">
             <h2 class="tag">Escribinos</h2>
             <p>Dejanos tu mensaje y te contactaremos a la brevedad</p>
-<div id="form">
-            <form id="form" class="form" action="https://formspree.io/f/xeqdzolv" method="POST">
+            <div id="formulario">
+                <form id="form" class="form" action="https://formspree.io/f/xeqdzolv" method="POST">
 
-                <label for="name"> Nombre completo: <span>*</span></label>
-                <input name="name" required type="text" id="name" placeholder="Nombre y apellido">
+                    <label for="name"> Nombre completo: <span>*</span></label>
+                    <input name="name" required type="text" id="name" placeholder="Nombre y apellido">
 
 
-                <label for="email"> Correo electrónico: <span>*</span></label>
-                <input name="email" type="text" id="email" required placeholder="*****@gmail.com">
+                    <label for="email"> Correo electrónico: <span>*</span></label>
+                    <input name="email" type="text" id="email" required placeholder="*****@gmail.com">
 
-                <label class="message" for="message"> Mensaje: </label>
-                <textarea id="message" name="message" cols="30" rows="10"
-                    placeholder="Ingrese aquí su consulta"></textarea>
+                    <label class="message" for="message"> Mensaje: </label>
+                    <textarea id="message" name="message" cols="30" rows="10"
+                        placeholder="Ingrese aquí su consulta"></textarea>
 
-                <button type="submit" class="btn primary full">Enviar</button>
-                <button type="reset" class="btn primary full">Borrar</button>
-
-            </form>
-</div>
+                    <button type="submit" class="btn primary full">Enviar</button>
+                </form>
+            </div>
         </section>
-        <section class="nosotras">
+        <div class="nosotras">
             <section class="flex-1">
                 <i class="fa-solid fa-people-group"></i>
                 <h5>Acerca de Nosotras</h5>
@@ -102,39 +100,46 @@
                 <h5>Nuestras oficinas</h5>
                 <p>Nuestras sucursales están ubicadas en la Ciudad Autónoma de Buenos Aires(CABA) y en la ciudad de
                     Rosario (Santa Fe)</p>
-                <section >
+                <section>
                     <h6>Sucursal CABA</h6>
                     <address>
                         <p>Av.Roque Saenz Peña 786<br>
                             Tel: (011) 4869-4560</p>
                     </address>
                     <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26271.430998805037!2d-58.377698!3d-34.60596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccace06778fdd%3A0xc2d803e529baeee0!2sAv.%20Pres.%20Roque%20S%C3%A1enz%20Pe%C3%B1a%20786%2C%20C1067%20CABA!5e0!3m2!1ses-419!2sar!4v1665669279470!5m2!1ses-419!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26271.430998805037!2d-58.377698!3d-34.60596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccace06778fdd%3A0xc2d803e529baeee0!2sAv.%20Pres.%20Roque%20S%C3%A1enz%20Pe%C3%B1a%20786%2C%20C1067%20CABA!5e0!3m2!1ses-419!2sar!4v1665669279470!5m2!1ses-419!2sar"
+                            width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </section>
-                <section >
+                <section>
                     <h6>Sucursal Rosario</h6>
                     <address>
                         <p>Entre Ríos 1183<br>
                             Tel: (011) 4869-4560</p>
                     </address>
                     <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.0124812099766!2d-60.64410654999184!3d-32.95067987932723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab10e8cd6c5f%3A0xbe9810b3e3b61520!2sEntre%20R%C3%ADos%201183%2C%20S2000CRU%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1665669428497!5m2!1ses-419!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.0124812099766!2d-60.64410654999184!3d-32.95067987932723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab10e8cd6c5f%3A0xbe9810b3e3b61520!2sEntre%20R%C3%ADos%201183%2C%20S2000CRU%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1665669428497!5m2!1ses-419!2sar"
+                            width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </section>
 
 
             </section>
-        </section>
+        </div>
     </main>
     <footer class="footer">
         <p>Pisar La Tierra <i class="fa-regular fa-copyright"></i> copyright 2022</p>
 
         <a href="#" class="facebook"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
-        <a href="#" class="instagram"><i  class="fa-brands fa-square-instagram"></i> Instagram</a>
+        <a href="#" class="instagram"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
         <a href="https://web.whatsapp.com/" class="whatsapp"><i class="fa-brands fa-whatsapp"></i>
             Whatsapp</a>
     </footer>
-    <script src="/javascript/formulario.js"></script> 
+    <script src="/javascript/formulario.js"></script>
 </body>
+
 </html>
