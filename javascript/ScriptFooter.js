@@ -8,3 +8,5 @@ var Idfooter=`<div><p>Pisar La Tierra <i class="fa-regular fa-copyright"></i> co
 document.getElementById("Idfooter").innerHTML=Idfooter
 
 
+
+
