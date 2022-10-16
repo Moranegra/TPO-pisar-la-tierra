@@ -516,6 +516,16 @@ a {
     
     }
         
+       /* #banner-destinos h1 {
+            padding: 2.5rem 0;
+            font-weight: 600;
+        }
+        #banner-destinos h6,
+#banner-destinos .thinner {
+    font-weight: 400;
+    color: black;
+
+}*/
 
         .contenedor-destinos {
         position: absolute;
@@ -695,7 +705,7 @@ font-family: 'Alegreya', 'Montserrat', sans-serif;
  }
  
  .previa-producto .previa .stars i{
-    color: purple;
+    color: lawngreen;
  }
  
  
@@ -719,6 +729,17 @@ font-family: 'Alegreya', 'Montserrat', sans-serif;
 }
  
 
+/*.destinos-contenedor .destinos-carta p {
+    padding: 0 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2px;
+    text-align: justify;
+}
+.destinos-contenedor .destinos-carta i {
+    margin: 2px ;
+}*/
+
 
 /*Página regiones*/
 #banner-regiones {
@@ -730,7 +751,22 @@ font-family: 'Alegreya', 'Montserrat', sans-serif;
     text-align: center;
     padding: 12.5rem 1.25rem;
 }
+/*#banner-regiones h1 {
+    padding: 2.5rem 0;
+    font-weight: 600;
+}
 
+#banner-regiones h6,
+#banner-regiones .thinner {
+    font-weight: 400;
+
+}
+
+#banner-regiones a {
+    text-transform: capitalize;
+    font-style: italic;
+
+}*/
 .regiones1-contenedor{
     padding: 3.1rem;
     width: 100%;
@@ -816,12 +852,14 @@ font-family: 'Alegreya', 'Montserrat', sans-serif;
     margin: auto;
     overflow: hidden;
     position: relative;
-    /*border-radius: 6px;*/
+    border-radius: 20px;
     
     }
     
     #banner-regiones2 ul {
-             display: flex;
+     /*   margin: 0;
+        padding: 0;*/
+        display: flex;
         width: 1000%;
         animation: regiones2 50s infinite alternate ease-in-out;
     }
@@ -838,8 +876,11 @@ font-family: 'Alegreya', 'Montserrat', sans-serif;
     
     .contenedor-regiones2 {
     position: absolute;
-        width: 100%;
-    max-width: 1300px;  
+    
+    width: 100%;
+    max-width: 1300px;
+    
+    
     text-align: center;
     padding: 6.25rem 1.25rem 0 2rem ;
     
@@ -952,6 +993,22 @@ font-family: 'Alegreya', 'Montserrat', sans-serif;
     padding: 12.5rem 1.25rem;
 }
 
+/*#banner-faqs h1 {
+padding: 2.5rem 0;
+font-weight: 600;
+}
+
+#banner-faqs h6,
+#banner-faqs .thinner {
+font-weight: 400;
+
+}
+
+#banner-faqs a {
+text-transform: capitalize;
+font-style: italic;
+
+}*/
 .info h5 {
     display: flex;
     justify-content: center;
@@ -987,7 +1044,23 @@ background-color: #deb6ab;
     padding: 12.5rem 1.25rem;
 }
 
+/*#banner-nosotrxs h1 {
+    padding: 40px 0;
+    font-weight: 600;
+}
 
+#banner-nosotrxs h6,
+#banner-nosotrxs .thinner {
+    font-weight: 400;
+
+}
+.contacto {
+        margin: 2rem;
+    height: 500px;
+   /* width: 100%;*/
+ /*   max-width: 1300px;
+    text-align: center;
+}*/
 .contacto {
     background-color: burlywood;
     height: 50rem;
@@ -1037,14 +1110,17 @@ background-image: url('../media/atardecer-cordoba.jpg');
     cursor: pointer;
     border-radius: 6px;
     height: 3rem;
+   
         padding: 0 1.5 1 1.5rem;
-              color: black;
+      
+        color: black;
         background-color: darkgray;
         border: transparent;
 
 }
 .nosotras{
-        display: flex;
+    
+    display: flex;
     flex-wrap: wrap;
     margin: 2rem;
 }
@@ -1112,7 +1188,7 @@ form  {
 box-shadow: 1px -1px 17px 0px rgba(0, 0, 0, 0.75);
 font-family: 'Alegreya';
 }
- form h3, h6 {
+form h3, h6 {
     text-align: center;
     width: 100%;
 }
@@ -1240,7 +1316,7 @@ input {
         font-size: 1.2rem;
     }
    /*Formulario Consulta Paquetes*/
-    form {
+   form  {
         
     width: 30rem;
     height: 30rem;
@@ -1248,7 +1324,7 @@ input {
         
         
     }
-     form h3, h6 {
+    form h3, h6 {
         font-size: 1.5rem;
        
     }
@@ -1294,7 +1370,6 @@ header label {
     color: white;
 }
 label:hover {
-    
     cursor: pointer;
     background: rgba(51, 51, 51, 0.9);
 }
@@ -1310,13 +1385,15 @@ label:hover {
     font-size: 1.5rem;
 
 }
-/*.menu .logo:hover {
+.menu .logo:hover {
     background: rgba(11,11, 11, 0.9);
+    
     border-radius: 10px;
-}*/
+}
 .menu {
     position: absolute;
     background-color: rgba(11, 11, 11, 0.9);
+  /* background-color: black;*/
     width: 100%;
     height: 100%;
     margin-left: -100%;
@@ -1350,13 +1427,12 @@ label:hover {
 #btn-menu:checked ~ .menu {
     margin: 0;
 z-index: 100;}
-
 /*Sección regiones página index*/
 #regiones h2 {
     font-size: 1.8rem;
 }
 #regiones h2::after, h2::before {
-   
+    
     position: absolute;
     width: 50px;
   height: 2px;
@@ -1444,6 +1520,9 @@ text-align: center;
 .form label {
 
     height: 2rem;
+
+
+   
     font-size: 1.5rem;
 }
 
@@ -1476,12 +1555,12 @@ text-align: center;
     width: 400px;
     height: 200px;
   }
- form  {
+  form  {
 
     height: 30rem;
   
 }
- form h3, h6 {
+form h3, h6 {
     
     padding: 0.5rem 0 0 0;
 }
@@ -1509,16 +1588,17 @@ text-align: center;
     }
     
      header label {
+        
+
         font-size: 20px;
         width: 100%;
         height: auto;
         background-color: black;
        
     }
-   
-    /*header label:hover {
-        background-color: rgba(0, 0, 0, 0.7);
-    }*/
+    header label:hover {
+        background-color: black;
+    }
     
     .menu .logo {
        
@@ -1528,7 +1608,7 @@ text-align: center;
     
     }
     .menu .logo:hover {
-        display: none;
+        background: black;
 
     }
     .menu {
@@ -1882,14 +1962,14 @@ padding: 2rem;
 
     /*Formulario Consulta Paquetes*/
      /*Formulario Consulta Paquetes*/
- form  {
+     form  {
         
         width: 40rem;
         height: 55rem;
         margin-top: 15rem;
         
     }
- form h3, h6 {
+    form h3, h6 {
         font-size: 2rem;
         margin: 0;
         padding: 0rem;
