@@ -240,7 +240,7 @@ label:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: auto;
+    height: 98vh;/*100vh*/
     text-align: center;
     padding: 12.5rem 1.2rem ;
 }
@@ -486,6 +486,9 @@ a {
     text-decoration: none;
 
 }
+
+
+
     #banner-destinos {
         width: 100%;
         height: 600px;
@@ -511,7 +514,8 @@ a {
             height: 650px;
             
         }
-             
+         
+     
     .contenedor-destinos h1 {
         padding: 2.5rem 0;
         font-weight: 600;
@@ -529,6 +533,16 @@ a {
     
     }
         
+       /* #banner-destinos h1 {
+            padding: 2.5rem 0;
+            font-weight: 600;
+        }
+        #banner-destinos h6,
+#banner-destinos .thinner {
+    font-weight: 400;
+    color: black;
+
+}*/
 
         .contenedor-destinos {
         position: absolute;
@@ -708,7 +722,7 @@ font-family: 'Alegreya', 'Montserrat', sans-serif;
  }
  
  .previa-producto .previa .stars i{
-    color: purple;
+    color: lawngreen;
  }
  
  
@@ -731,6 +745,17 @@ font-family: 'Alegreya', 'Montserrat', sans-serif;
     color: teal;
 }
  
+
+/*.destinos-contenedor .destinos-carta p {
+    padding: 0 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2px;
+    text-align: justify;
+}
+.destinos-contenedor .destinos-carta i {
+    margin: 2px ;
+}*/
 
 
 /*Página regiones*/
@@ -829,12 +854,14 @@ font-family: 'Alegreya', 'Montserrat', sans-serif;
     margin: auto;
     overflow: hidden;
     position: relative;
-    /*border-radius: 6px;*/
+    border-radius: 20px;
     
     }
     
     #banner-regiones2 ul {
-             display: flex;
+     /*   margin: 0;
+        padding: 0;*/
+        display: flex;
         width: 1000%;
         animation: regiones2 50s infinite alternate ease-in-out;
     }
@@ -851,8 +878,11 @@ font-family: 'Alegreya', 'Montserrat', sans-serif;
     
     .contenedor-regiones2 {
     position: absolute;
-        width: 100%;
-    max-width: 1300px;  
+    
+    width: 100%;
+    max-width: 1300px;
+    
+    
     text-align: center;
     padding: 6.25rem 1.25rem 0 2rem ;
     
@@ -1000,66 +1030,95 @@ background-color: #deb6ab;
     padding: 12.5rem 1.25rem;
 }
 
+#banner-nosotrxs h1 {
+    padding: 40px 0;
+    font-weight: 600;
+}
+
+#banner-nosotrxs h6,
+#banner-nosotrxs .thinner {
+    font-weight: 400;
+
+}
 
 .contacto {
     background-color: burlywood;
     height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
     margin: 2rem;
-}
-.contacto h2 {
+    justify-content: center;
+    align-content: flex-start;
     
+} 
+.contacto h2     {
     font-weight: 600;
-    text-align: center;
     padding: 3rem;
-    margin-top: 2rem;
+    
+    
 }
 .contacto p {
     font-size: 1.2rem;
     font-weight: 500;
     padding: 2rem;
 }
-.contacto .form {
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 42rem;
-    margin: auto;
+    width: 70%;
     height: 30rem;
     border: 1px solid black;
-background-image: url('../media/atardecer-cordoba.jpg');
-}
-
+    background-image: url('../media/atardecer-cordoba.jpg');
+    border-radius: 10px;
+    box-shadow: 1px -1px 17px 0px rgba(0, 0, 0, 0.75);
+ }
 
 .form label {
-    width: 95%;
     height: 1.5rem;
-    margin: 0 1rem 0 1rem ;
     text-align: center;
 }
-.form input, .form textarea {
-    width:95%;
-    margin: 0 1rem 0 1rem ;
+
+.form input {
+    margin: 0 1rem;
     border-radius: 6px;
     border: black solid 1px;
+    height: 2rem;
+    text-indent: 0.5rem;
 }
+
+.btn-formu{
+text-align: center;
+}
+
+.form textarea {
+    margin: 0 1rem;
+    border-radius: 6px;
+    border: black solid 1px;
+    height: 10rem;
+    font-family: 'Arial';
+    text-indent: 0.5rem;
+}
+
 .form button{
     margin: 1rem;
     width: 50%;
-    cursor: pointer;
     border-radius: 6px;
     height: 3rem;
-        padding: 0 1.5 1 1.5rem;
-              color: black;
-        background-color: darkgray;
-        border: transparent;
-
+    color: black;
+    background-color: darkgray;
+    border: transparent;
+    
+    
 }
 .nosotras{
-        display: flex;
+    
+    display: flex;
     flex-wrap: wrap;
     margin: 2rem;
+    justify-content: center;
+    align-content: flex-start;
+    
 }
 .nosotras i {
     margin: 1rem;
@@ -1089,17 +1148,17 @@ background-image: url('../media/atardecer-cordoba.jpg');
     display: flex;
     flex-wrap: wrap;
     }
-    .flex-3 h5, p {
+.flex-3 h5, p {
                 text-align: center;
         justify-content: center;
         width: 100%;
-    }
-    address, h6 {
+}
+address, h6 {
         text-align: center;
         padding: 0.5rem ;
         margin: 0.5rem;
         
-    }
+}
     
 /*Formulario de consulta paquetes*/
 
@@ -1108,61 +1167,76 @@ background-image: url('../media/atardecer-cordoba.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 800px;
 }
 
+.paquetes{
     
-form  {
     display: flex;
     flex-wrap: wrap;
-    width: 25rem;
-    height: 26rem;
-    margin: 5rem auto;
-    padding: auto;
+    margin: 4rem;
+    justify-content: center;
+    align-content: flex-start;
+    
+}
+   
+form  {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 30rem;
+    width: 50%; 
+    padding:0 20px;
     border: solid 1px;
     background-color: transparent;
     border-radius: 10px;
 box-shadow: 1px -1px 17px 0px rgba(0, 0, 0, 0.75);
-font-family: 'Alegreya';
 }
- form h3, h6 {
+    
+
+form h3, h6 {
     text-align: center;
     width: 100%;
+    
 }
 input, select {
     font-family: 'Montserrat', 'Alegreya';
     font-weight: 600;
-}
-input {
-    width: 23rem;
-    height: 2rem;
-    margin:1rem ;
     
 }
+input {
+    height:2rem;
+    margin:1rem;
+    text-indent: 0.5rem;
+}
  select {
-    width: 23rem;
     height: 2rem;
-    margin-left: 1rem ;
+    margin: 1rem;
 }
  textarea {
     resize: none;
-    width: 23rem;
     margin: 1rem;
+    font-family: 'Arial';
+    text-indent: 0.5rem;
+
+}
+
+.btn-paquete{
+    display:flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
  button {
     width: 100px;
-    margin-left: 4.2rem;
     margin-bottom: 2rem;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 0px;
     padding: 10px 5px;
     color: white;
     font-size: 1rem;
     outline: none;
     border-radius: 4px;
     cursor: pointer;
-    justify-content: space-around;
+   
     }
 
 
@@ -1243,52 +1317,28 @@ input {
         
     
     }
-    /*Página contacto*/
-    .form label {
-
-        height: 1.5rem;
     
-    
-       
-        font-size: 1.2rem;
-    }
    /*Formulario Consulta Paquetes*/
-    form {
-        
-    width: 30rem;
-    height: 30rem;
-
-        
-        
-    }
-     form h3, h6 {
-        font-size: 1.5rem;
+  
+    form h6 {
+        font-size: 1.3rem;
        
     }
 
     input {
-        width: 100%;
         height: 2rem;
         margin:1rem ;
         
     }
      select {
-        width: 100%;
         height: 2rem;
-        margin:0 1rem;
+        margin:1rem;
     }
      textarea {
-        width: 100%;
         margin: 1rem;
     
     }
-     button {
-        width: 100px;
-        margin: auto;
-        padding: auto;
-
-        
-    }
+     
 
 
 
@@ -1307,7 +1357,6 @@ header label {
     color: white;
 }
 label:hover {
-    
     cursor: pointer;
     background: rgba(51, 51, 51, 0.9);
 }
@@ -1323,10 +1372,11 @@ label:hover {
     font-size: 1.5rem;
 
 }
-/*.menu .logo:hover {
+.menu .logo:hover {
     background: rgba(11,11, 11, 0.9);
+    
     border-radius: 10px;
-}*/
+}
 .menu {
     position: absolute;
     background-color: rgba(11, 11, 11, 0.9);
@@ -1363,13 +1413,12 @@ label:hover {
 #btn-menu:checked ~ .menu {
     margin: 0;
 z-index: 100;}
-
 /*Sección regiones página index*/
 #regiones h2 {
     font-size: 1.8rem;
 }
 #regiones h2::after, h2::before {
-   
+    
     position: absolute;
     width: 50px;
   height: 2px;
@@ -1447,7 +1496,7 @@ text-align: center;
 .contacto {
     height: 50rem;
     
-}
+}/*
 .contacto .form {
  
     width: 500px;
@@ -1457,10 +1506,13 @@ text-align: center;
 .form label {
 
     height: 2rem;
+
+
+   
     font-size: 1.5rem;
 }
 
-
+*/
 .nosotras{
     
     display: flex;
@@ -1489,12 +1541,14 @@ text-align: center;
     width: 400px;
     height: 200px;
   }
- form  {
+/*
+
+  form  {
 
     height: 30rem;
   
 }
- form h3, h6 {
+form h3, h6 {
     
     padding: 0.5rem 0 0 0;
 }
@@ -1504,7 +1558,7 @@ text-align: center;
     margin-left: 3.4rem;
    
   
-    }
+    }*/
 }
 @media screen and (max-width:576px){
     html {
@@ -1522,16 +1576,17 @@ text-align: center;
     }
     
      header label {
+        
+
         font-size: 20px;
         width: 100%;
         height: auto;
         background-color: black;
        
     }
-   
-    /*header label:hover {
-        background-color: rgba(0, 0, 0, 0.7);
-    }*/
+    header label:hover {
+        background-color: black;
+    }
     
     .menu .logo {
        
@@ -1541,7 +1596,7 @@ text-align: center;
     
     }
     .menu .logo:hover {
-        display: none;
+        background: black;
 
     }
     .menu {
@@ -1814,15 +1869,15 @@ padding: 2rem;
 }
 .contacto{
     height: 70rem;
-}
+}/*
 .contacto .form {
       
-    height: 50rem;
+    height: 45rem;
     
 }
 
 #form {
-    width:95%;
+    width:100%;
     padding: 1rem;
     
 }
@@ -1845,7 +1900,7 @@ padding: 2rem;
     height: 4rem;
 
 
-}
+}*/
 
 .nosotras i {
     font-size: 2rem;
@@ -1907,41 +1962,109 @@ padding: 2rem;
     }
 
     /*Formulario Consulta Paquetes*/
-     /*Formulario Consulta Paquetes*/
- form  {
+    
+
+     /*
+     form  {
         
-        width: 40rem;
-        height: 55rem;
+        width: 35rem;
+        height: 50rem;
         margin-top: 15rem;
+        margin-left: 10rem;
         
     }
- form h3, h6 {
+    form h3, h6 {
         font-size: 2rem;
         margin: 0;
         padding: 0rem;
     }
 
     input {
-        width: 38rem;
+        width: 32rem;
         height: 4rem;
-        margin:1rem ;
+        margin:2rem ;
         
     }
      select {
-        width: 38rem;
+        width: 32rem;
         height: 4rem;
-        margin:0 1rem 0 1rem ;
+        margin:0 2rem 0 2rem ;
     }
      textarea {
-                width: 38rem;
-        margin: 1rem;
+        resize: none;
+        width: 32rem;
+        margin: 2rem;
     
     }
      button {
         width: 100px;
-        margin-left: 4rem;
+        margin-left: 3.2rem;
         
         font-size: 1.5rem;
         
+    } */
+
+    form  {
+        height: 50rem;
+        width: 95%; 
+        padding:0 15px;
+        border: solid 1px;
     }
+        
+    form h3, h6 {
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    input, select {
+        font-weight: 400;
+    }
+
+    input {
+        height:3rem;      
+    }
+
+    select {
+        height: 3rem;
+    }
+
+    button {
+        font-size: 1.8rem;
+    }
+
+    .form {
+        width: 80%;
+       
+     }
+    
+    .form label {
+        height: 2rem;
+        font-size: 1.5rem;
+        margin:0.8rem;
+    }
+    
+    .form input {
+       height: 4rem;
+    }
+        
+    .form textarea {
+        height: 15rem;
+        
+    }
+    
+    .contacto {
+        height: 50rem;
+           
+    } 
+    .contacto h2     {
+        font-weight: 400;
+      
+    }
+    .contacto p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        
+    }
+
 }
