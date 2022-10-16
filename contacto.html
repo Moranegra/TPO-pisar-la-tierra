@@ -12,31 +12,10 @@
 </head>
 
 <body>
-
-    <header class="header" id="IdH">
-        <!--  <input type="checkbox" id="btn-menu">
-          <label for="btn-menu" class="btn-menu"><i class="fa-sharp fa-solid fa-bars"></i></label>
-          <nav class="menu">
-              <h1 class="logo"><a href="index.html"><span class="thinner">Pisar <i class="fa-sharp fa-solid fa-circle"></i><br> </span>La Tierra</a></h1>
-          
-  
-  
-                  <ul class="menu-item">
-                      <li><a href="index.html" class="current">Inicio</a></li>
-                      <li><a href="destinos.html">Destinos</a></li>
-                      <li><a href="regiones.html">Regiones</a></li>
-                      <li><a href="info-importante.html">Info Importante</a></li>
-  
-                      <li><a href="contacto.html">Contacto</a></li>
-                  </ul>
-          
-              
-          </nav> -->
-          
+    <header class="header" id="IdH">   
       </header>
       <script src="javascript/ScriptHeader.js"></script>
-    
-    <main>
+        <main>
         <div id="banner-nosotrxs">
             <article class="contenedor">
                 <h6 class="muestra-2">Argentina | 2022</h6>
@@ -44,11 +23,12 @@
                 <a href="#form" class="btn btn-dark">Contactanos</a>
             </article>
         </div>
+       
         <section class="contacto">
-            <h2 class="tag">Escribinos</h2>
+            <div><h2>Escribinos</h2></div>
             <p>Dejanos tu mensaje y te contactaremos a la brevedad</p>
-            <div id="formulario">
-                <form id="form" class="form" action="https://formspree.io/f/xeqdzolv" method="POST">
+            <form id="form" class="form" action="https://formspree.io/f/xeqdzolv" method="POST">
+
                     <label for="name"> Nombre completo: <span>*</span></label>
                     <input name="name" required type="text" id="name" placeholder="Nombre y apellido">
                     <label for="email"> Correo electrónico: <span>*</span></label>
@@ -56,7 +36,73 @@
                     <label class="message" for="message"> Mensaje: </label>
                     <textarea id="message" name="message" cols="30" rows="10"
                         placeholder="Ingrese aquí su consulta"></textarea>
-                    <button type="submit" class="btn primary full">Enviar</button>
-                </form>
-            </div>
+                    <div class="btn-formu"><button type="submit" class="btn primary full">Enviar</button></div>
+            </form>
         </section>
+        <div class="nosotras">
+            <section class="flex-1">
+                <i class="fa-solid fa-people-group"></i>
+                <h5>Acerca de Nosotras</h5>
+                <p> Pisar La Tierra, nace hace 10 años, en un viaje mochilero entre amigas.
+                    Nuestros servicios están pensados y desarrollados para jóvenes de distintas edades, familias y
+                    grupos de amigxs de distintos puntos del país.
+                    Creemos que para hacer turismo hay que estar frente a una evolución constante, ofreciendo
+                    siempre calidad, novedad y grandes experiencias.
+                    En cada uno de nuestros destinos tratamos de innovar temporada tras temporada en la oferta de
+                    las mejores excursiones, lugares por descubrir y alojamiento de calidad para que queines viajen con
+                    nosotrxs tengan una experiencia inolvidable.
+                    Hoy estamos nuevamente frente a un nuevo desafío, para poder hacer que en tus viajes solo te
+                    dediques a disfrutar.
+                    ¡Permitinos acompañarte!
+                </p>
+            </section>
+            <section class="flex-2">
+                <i class="fa-solid fa-handshake"></i>
+                <h5>Nuestro compromiso</h5>
+                <p>Ofrecer experiencias incleíbles y precios accesibles para que puedas armar el viaje que soñaste y
+                    a tu medida. Tenemos una variedad cartilla de excursiones y posibilidades en cada destino turístico para que puedas elegir. 
+                    Dentro de nuestros servicios ofrecemos, también viajes corparativos y grupales. Si tenes una idea contactanos y haremos lo posible para ayudarete a concretarla
+                </p>
+            </section>
+            <section class="flex-3">
+                <i class="fa-solid fa-location-dot"></i>
+                <h5>Nuestras oficinas</h5>
+                <p>Nuestras sucursales están ubicadas en la Ciudad Autónoma de Buenos Aires(CABA) y en la ciudad de
+                    Rosario (Santa Fe)</p>
+                <section>
+                    <h6>Sucursal CABA</h6>
+                    <address>
+                        <p>Av.Roque Saenz Peña 786<br>
+                            Tel: (011) 4869-4560</p>
+                    </address>
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26271.430998805037!2d-58.377698!3d-34.60596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccace06778fdd%3A0xc2d803e529baeee0!2sAv.%20Pres.%20Roque%20S%C3%A1enz%20Pe%C3%B1a%20786%2C%20C1067%20CABA!5e0!3m2!1ses-419!2sar!4v1665669279470!5m2!1ses-419!2sar"
+                            width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+                <section>
+                    <h6>Sucursal Rosario</h6>
+                    <address>
+                        <p>Entre Ríos 1183<br>
+                            Tel: (0341) 456-0505</p>
+                    </address>
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.0124812099766!2d-60.64410654999184!3d-32.95067987932723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab10e8cd6c5f%3A0xbe9810b3e3b61520!2sEntre%20R%C3%ADos%201183%2C%20S2000CRU%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1665669428497!5m2!1ses-419!2sar"
+                            width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+ 
+    <footer class="footer" id="Idfooter">
+    </footer>
+    <script src="javascript/ScriptFooter.js"></script>
+    <script src="/javascript/formulario-contacto.js"></script>
+</body>
+
+</html>

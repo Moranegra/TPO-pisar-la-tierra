@@ -265,13 +265,13 @@ label:hover {
 
 /*Sección Regiones-Página index*/
 #regiones {
-    padding: 3.1rem 0;
-    margin: 0.6rem;
+    padding: 3.1rem 2rem;
+    margin: 1rem;
 }
 
 #regiones h2 {
     text-align: center;
-    padding-top: 0.6rem;
+    padding-top: 2rem;
     padding-bottom: 1.8rem;
     
 
@@ -286,7 +286,7 @@ label:hover {
     width: 140px;
     height: 3px;
     background-color: currentColor;
-    top: 2rem;
+    top: 3rem;
     transform: scale(0);
     transition: all 0.5s ease-in;
 }
@@ -298,6 +298,9 @@ label:hover {
 }
 #regiones h2:hover::after, h2:hover::before {
 transform: scale(1);
+}
+#regiones p {
+    padding: 1.5rem;
 }
 
 #regiones .wrapper {
@@ -1000,61 +1003,84 @@ background-color: #deb6ab;
     padding: 12.5rem 1.25rem;
 }
 
-
-.contacto {
+.contacto  {
     background-color: burlywood;
     height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
     margin: 2rem;
-}
-.contacto h2 {
+    justify-content: center;
+    align-content: flex-start;
     
+    
+} 
+.contacto h2     {
     font-weight: 600;
-    text-align: center;
-    padding: 3rem;
-    margin-top: 2rem;
+    padding-top: 3rem;    
 }
 .contacto p {
     font-size: 1.2rem;
     font-weight: 500;
-    padding: 2rem;
+    padding-top: 2rem;
 }
-.contacto .form {
+ .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 42rem;
-    margin: auto;
+    width: 70%;
     height: 30rem;
     border: 1px solid black;
-background-image: url('../media/atardecer-cordoba.jpg');
-}
-
+    border-radius: 6px;
+    background-color: mediumaquamarine;
+   
+ }
 
 .form label {
-    width: 95%;
     height: 1.5rem;
-    margin: 0 1rem 0 1rem ;
+    width: 95%;
     text-align: center;
+    margin:0 1.5rem;
 }
-.form input, .form textarea {
-    width:95%;
-    margin: 0 1rem 0 1rem ;
+.form label:hover {
+background-color: mediumaquamarine;
+}
+
+.form input {
+    margin: 0 1.5rem;
     border-radius: 6px;
     border: black solid 1px;
+    height: 2rem;
+    width: 95%;
+    text-indent: 0.5rem;
 }
+
+
+.btn-formu{
+text-align: center;
+}
+
+.form textarea {
+    margin: 0 1.5rem;
+    border-radius: 6px;
+    border: black solid 1px;
+    height: 10rem;
+    width: 95%;
+    font-family: 'Arial';
+    text-indent: 0.5rem;
+}
+
+
+
 .form button{
     margin: 1rem;
     width: 50%;
-    cursor: pointer;
     border-radius: 6px;
     height: 3rem;
-        padding: 0 1.5 1 1.5rem;
-              color: black;
-        background-color: darkgray;
-        border: transparent;
-
+  
+    color: white;
+    background-color: black;
+    border: transparent;
+    
 }
 .nosotras{
         display: flex;
@@ -1108,22 +1134,21 @@ background-image: url('../media/atardecer-cordoba.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 100%;
 }
 
-    
 form  {
     display: flex;
-    flex-wrap: wrap;
-    width: 25rem;
-    height: 26rem;
+    flex-flow: column nowrap;
+    height: 30rem;
+    width: 50%; 
+    padding:0 20px;
     margin: 5rem auto;
-    padding: auto;
     border: solid 1px;
     background-color: transparent;
     border-radius: 10px;
 box-shadow: 1px -1px 17px 0px rgba(0, 0, 0, 0.75);
-font-family: 'Alegreya';
+font-family: 'Alegreya', 'Montserrat';
 }
  form h3, h6 {
     text-align: center;
@@ -1132,40 +1157,50 @@ font-family: 'Alegreya';
 input, select {
     font-family: 'Montserrat', 'Alegreya';
     font-weight: 600;
-}
-input {
-    width: 23rem;
-    height: 2rem;
-    margin:1rem ;
     
 }
+input {
+    height:2rem;
+    margin:1rem;
+    text-indent: 0.5rem;
+}
  select {
-    width: 23rem;
     height: 2rem;
-    margin-left: 1rem ;
+    margin: 1rem;
 }
  textarea {
     resize: none;
-    width: 23rem;
     margin: 1rem;
+    font-family: 'Montserrat';
+    text-indent: 0.5rem;
 
 }
- button {
-    width: 100px;
-    margin-left: 4.2rem;
-    margin-bottom: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 0px;
-    padding: 10px 5px;
-    color: white;
-    font-size: 1rem;
-    outline: none;
-    border-radius: 4px;
-    cursor: pointer;
-    justify-content: space-around;
+ 
+
+
+
+    .btn-paquete{
+        display:flex;
+        margin: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
     }
-
-
+ 
+    button {
+        width: 100px;
+        margin-bottom: 2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 5px;
+        color: white;
+        font-size: 1rem;
+        outline: none;
+        border-radius: 4px;
+        cursor: pointer;
+       
+        }
+    
+    
 
 /*Media Queries*/
 @media screen and (max-width:992px){
@@ -1253,42 +1288,22 @@ input {
         font-size: 1.2rem;
     }
    /*Formulario Consulta Paquetes*/
-    form {
-        
-    width: 30rem;
-    height: 30rem;
+   form h6 {
+    font-size: 1.3rem;
+   
+}
 
-        
-        
-    }
-     form h3, h6 {
-        font-size: 1.5rem;
-       
-    }
-
-    input {
-        width: 100%;
-        height: 2rem;
-        margin:1rem ;
-        
-    }
-     select {
-        width: 100%;
-        height: 2rem;
-        margin:0 1rem;
-    }
-     textarea {
-        width: 100%;
-        margin: 1rem;
+input {
+    height: 2rem;
+    margin:1rem ;
     
-    }
-     button {
-        width: 100px;
-        margin: auto;
-        padding: auto;
-
-        
-    }
+}
+ select {
+    height: 2rem;
+    margin:1rem;
+}
+ textarea {
+    margin: 1rem;
 
 
 
@@ -1323,10 +1338,7 @@ label:hover {
     font-size: 1.5rem;
 
 }
-/*.menu .logo:hover {
-    background: rgba(11,11, 11, 0.9);
-    border-radius: 10px;
-}*/
+
 .menu {
     position: absolute;
     background-color: rgba(11, 11, 11, 0.9);
@@ -1355,6 +1367,8 @@ label:hover {
 .menu li a:hover {
     font-weight: 600;
     background: darkcyan;
+    padding: 1rem;
+    margin: 0 6rem;
 
     border-radius: 10px;
     
@@ -1489,22 +1503,17 @@ text-align: center;
     width: 400px;
     height: 200px;
   }
- form  {
 
-    height: 30rem;
-  
-}
- form h3, h6 {
+  /*Página formulario paquete whatsapp*/
+ 
+ input  {
+    height: 4rem;
     
-    padding: 0.5rem 0 0 0;
-}
+ }
+ select {
+    height: 4rem;
+ }
 
- button {
-    width: 100px;
-    margin-left: 3.4rem;
-   
-  
-    }
 }
 @media screen and (max-width:576px){
     html {
@@ -1529,9 +1538,6 @@ text-align: center;
        
     }
    
-    /*header label:hover {
-        background-color: rgba(0, 0, 0, 0.7);
-    }*/
     
     .menu .logo {
        
@@ -1552,6 +1558,15 @@ text-align: center;
     
         font-size: 1.7rem;
       
+    }
+    .menu li a:hover {
+        font-weight: 600;
+        background: darkcyan;
+        padding: 1rem;
+        margin: 0 12rem;
+    
+        border-radius: 10px;
+        
     }
  
     
@@ -1637,26 +1652,7 @@ text-align: center;
     font-size: 1.5rem;
             
     }
-/*
-.footer p {
 
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    width: 100%;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.footer a {
-    
-align-items: center;
-padding: 2rem;
-    font-size: 1.5rem;
-    width: 100%;
-    
-}
-   */
  /*Página Destinos*/   
  .contenedor-destinos {
 
@@ -1784,6 +1780,36 @@ padding: 2rem;
 
 
 }
+
+/* para cada región*/
+.contenedor-regiones2 {
+    padding-top: 25rem;
+}
+.contenedor-regiones2 h3 {
+    font-weight: 400;
+}
+.texto-regiones2 h2 {
+    font-size: 2rem;
+}
+    .texto-regiones2 p {
+        
+        font-size: 2rem;
+        font-weight: 300;
+   
+    }
+    .botones-regiones {
+        
+        justify-content: space-evenly;
+        
+        margin: 0 1.5rem;
+    }
+    
+    .botones-regiones a {
+
+    font-size: 1.5rem;
+    }
+
+/*Página info*/
 #banner-faqs {
     height: 100vh;
     padding-top: 15rem;
@@ -1813,7 +1839,7 @@ padding: 2rem;
     padding-top: 15rem;
 }
 .contacto{
-    height: 70rem;
+    height: 90rem;
 }
 .contacto .form {
       
@@ -1881,67 +1907,66 @@ padding: 2rem;
     .mapa iframe {
         width: 100%;
     }
-/* para cada región*/
-#banner-regiones2  h1 {
-    padding-top: 30rem;
-}
-.texto-regiones2 h2 {
-    font-size: 2rem;
-}
-    .texto-regiones2 p {
-        
-        font-size: 2rem;
-        font-weight: 300;
-   
-    }
-    .botones-regiones {
-        
-        justify-content: space-evenly;
-        
-        margin: 0 1.5rem;
-    }
-    
-    .botones-regiones a {
-
-    font-size: 1.5rem;
-    }
 
     /*Formulario Consulta Paquetes*/
      /*Formulario Consulta Paquetes*/
  form  {
         
         width: 40rem;
-        height: 55rem;
+        height: 50rem;
         margin-top: 15rem;
         
     }
- form h3, h6 {
+ form h3, form h6 {
         font-size: 2rem;
         margin: 0;
-        padding: 0rem;
+        padding: 0;
     }
 
-    input {
-        width: 38rem;
+   input {
         height: 4rem;
-        margin:1rem ;
-        
     }
      select {
-        width: 38rem;
         height: 4rem;
-        margin:0 1rem 0 1rem ;
     }
-     textarea {
-                width: 38rem;
-        margin: 1rem;
-    
-    }
+   
      button {
         width: 100px;
-        margin-left: 4rem;
-        
+        margin: 1rem;
         font-size: 1.5rem;
         
     }
+}
+}
+@media screen and (max-width:728px) and (orientation: landscape) {
+ 
+     
+    .previa-producto .previa{
+   
+       width: 30rem;
+       height: 30rem;
+}
+.previa-producto .previa h3 {
+    font-size: 1.5rem;
+}
+.previa-producto .previa h6 {
+    font-size: 0.7rem;
+}
+.previa-producto .previa p {
+    font-size: 0.7rem;
+
+}
+.previa-producto .previa img{
+    height: 10rem;
+    width: 23rem;
+ }
+}
+@media screen and (max-width:576px) and (orientation: landscape) {
+ 
+     
+    .previa-producto .previa{
+   
+       width: 40rem;
+       height: 50rem;
+}
 }
