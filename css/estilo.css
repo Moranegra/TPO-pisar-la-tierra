@@ -1839,7 +1839,8 @@ text-align: center;
     padding-top: 15rem;
 }
 .contacto{
-    height: 90rem;
+    height: auto;
+    padding-bottom: 40px;
 }
 .contacto .form {
       
@@ -1850,7 +1851,9 @@ text-align: center;
 #form {
     width:95%;
     padding: 1rem;
-    
+    justify-content: space-around;
+    margin-top:50px;
+    margin-bottom:10px;
 }
 
 .form label {
@@ -1865,6 +1868,12 @@ text-align: center;
     
     padding: 1.5rem;    
 }
+
+.form textarea {
+    
+    height: 20rem;    
+}
+
 .form button{
     
     
@@ -1909,7 +1918,7 @@ text-align: center;
     }
 
     /*Formulario Consulta Paquetes*/
-     /*Formulario Consulta Paquetes*/
+    
  form  {
         
         width: 40rem;
