@@ -777,7 +777,7 @@ font-family: 'Alegreya', 'Montserrat', sans-serif;
 }
 .regiones1-contenedor .regiones1-carta {
     width: 300px;
-    height: 384px;
+    height: 400px;
     background-color: lavender;
     border-radius: 8px;
     box-shadow: 2px  rgba(0, 0, 0, 0.5);
@@ -817,7 +817,7 @@ font-family: 'Alegreya', 'Montserrat', sans-serif;
     font-weight: 500;
     color: darkred;
     font-weight: bold;
-    padding: 6rem;
+    padding: 2rem;
     
     
 }
@@ -1190,14 +1190,14 @@ input {
     button {
         width: 100px;
         margin-bottom: 2rem;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         padding: 10px 5px;
         color: white;
         font-size: 1rem;
         outline: none;
         border-radius: 4px;
         cursor: pointer;
-       
+   border: transparent;    
         }
     
     
