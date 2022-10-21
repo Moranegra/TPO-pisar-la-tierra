@@ -794,6 +794,7 @@ form {
     border-radius: 10px;
     box-shadow: 1px -1px 17px 0px rgba(0, 0, 0, 0.75);
     font-family: 'Alegreya', 'Montserrat';
+    background-color: rgb(221, 184, 135);
 }
 
 form h3,
@@ -848,7 +849,9 @@ button {
     border: transparent;
 }
 
-
+button:hover {
+    background-color: rgba(0, 0, 0, 8);
+}
 
 /*Página regiones*/
 #banner-regiones {
@@ -1208,7 +1211,7 @@ h2:hover::before {
 }
 
 .contacto {
-    background-color: burlywood;
+    background-color: whitesmoke;
     height: 50rem;
     display: flex;
     flex-wrap: wrap;
@@ -1238,7 +1241,7 @@ h2:hover::before {
     height: 30rem;
     border: 1px solid black;
     border-radius: 6px;
-    background-color: mediumaquamarine;
+    background-color: lightcyan;
 
 }
 
@@ -1250,7 +1253,7 @@ h2:hover::before {
 }
 
 .form label:hover {
-    background-color: mediumaquamarine;
+    background-color: transparent;
 }
 
 .form input {
@@ -1273,7 +1276,7 @@ h2:hover::before {
     border: black solid 1px;
     height: 10rem;
     width: 95%;
-    font-family: 'Arial';
+  /*  font-family: 'Arial';*/
     text-indent: 0.5rem;
 }
 
@@ -1281,7 +1284,7 @@ h2:hover::before {
 
 .form button {
     margin: 1rem;
-    width: 50%;
+    width: 30%;
     border-radius: 6px;
     height: 3rem;
 
@@ -1289,6 +1292,10 @@ h2:hover::before {
     background-color: black;
     border: transparent;
 
+}
+.form button:hover {
+    background-color: teal;
+    color: black;
 }
 
 .nosotras {
