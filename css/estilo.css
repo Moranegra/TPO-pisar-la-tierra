@@ -1295,6 +1295,7 @@ h2:hover::before {
     width: 95%;
     text-align: center;
     margin: 0 1.5rem;
+    font-family: 'Montserrat';
 }
 
 .form label:hover {
@@ -1308,6 +1309,7 @@ h2:hover::before {
     height: 2rem;
     width: 95%;
     text-indent: 0.5rem;
+    font-family: 'Montserrat';
 }
 
 
@@ -1321,8 +1323,8 @@ h2:hover::before {
     border: black solid 1px;
     height: 10rem;
     width: 95%;
-  /*  font-family: 'Arial';*/
     text-indent: 0.5rem;
+    font-family: 'Montserrat';
 }
 
 
