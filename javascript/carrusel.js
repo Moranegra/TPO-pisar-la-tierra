@@ -23,7 +23,7 @@ App.prototype.processingButton = function(event) {
 
 let actionAnt = (leftPosition,fotoWidth,slide) => {
     if(leftPosition > 0) {
-        console.log("entro 2")
+      //  console.log("entro 2")
         slide.style.left = `${-1 * (leftPosition - fotoWidth)}px`;
     }
 }

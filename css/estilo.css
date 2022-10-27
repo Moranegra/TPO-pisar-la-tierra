@@ -75,7 +75,7 @@ ul {
 .contenedor h1 {
     padding: 2.5rem 0;
     font-weight: 600;
-    
+
     color: white;
     text-shadow: 0 6px 6px black;
 }
@@ -127,7 +127,7 @@ ul {
 }
 
 .btn-dark {
-   /* background: black;
+    /* background: black;
     color: white;*/
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -205,7 +205,7 @@ label:hover {
 
 .menu ul {
     display: flex;
-     justify-content: flex-end;
+    justify-content: flex-end;
     list-style: none;
     font-weight: 500;
     padding-right: 1.8rem;
@@ -477,7 +477,7 @@ a {
     margin: auto;
     overflow: hidden;
     position: relative;
-    display:flex;   
+    display: flex;
     flex-flow: column wrap;
     align-items: center;
     /*  border-radius: 6px;*/
@@ -518,9 +518,9 @@ a {
 .contenedor-destinos h1 {
     padding: 2.5rem 0;
     font-weight: 600;
-  color: white;
+    color: white;
     text-shadow: 0 6px 6px black;
-    
+
 }
 
 .contenedor-destinos h6,
@@ -530,6 +530,7 @@ a {
     text-shadow: 0 6px 6px black;
 
 }
+
 #banner-destinos a {
     text-transform: capitalize;
     font-style: italic;
@@ -621,7 +622,7 @@ a {
 
 
 .caja-destinos {
-    
+
     margin: 1.5rem 1.8rem;
     padding: 1.8rem;
     overflow: hidden;
@@ -638,6 +639,7 @@ a {
     text-align: center;
     position: relative;
 }
+
 .caja-destinos .titulo::after {
     content: '';
     position: absolute;
@@ -651,10 +653,12 @@ a {
     transition: transform 0.6s ease-out;
 
 }
+
 .caja-destinos .titulo:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 .caja-destinos p {
     text-align: center;
     font-size: 1.2rem;
@@ -803,6 +807,7 @@ a {
 .previa-producto .previa a:hover {
     color: teal;
 }
+
 /*Formulario de consulta paquetes*/
 
 .fondo {
@@ -893,7 +898,7 @@ button:hover {
     height: 750px;
     text-align: center;
     padding: 12.5rem 1.25rem;
-    
+
 }
 
 .regiones1-contenedor {
@@ -932,7 +937,7 @@ button:hover {
 .regiones1-contenedor .regiones1-carta {
     width: 300px;
     height: 400px;
-    background-color:rgb(222, 245, 249);
+    background-color: rgb(222, 245, 249);
     border-radius: 8px;
     box-shadow: 2px rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -980,16 +985,18 @@ button:hover {
 
 
 }
+
 /*carrusel*/
 
-.carrusel{
+.carrusel {
     display: flex;
     flex-direction: column;
-    padding: 1rem ;
+    padding: 1rem;
     margin: 1rem;
     background-color: rgb(169, 203, 209);
 }
-.carrusel h2{
+
+.carrusel h2 {
     font-size: 1.5rem;
     line-height: 2rem;
     padding: 3rem 2rem 3rem 5rem;
@@ -999,31 +1006,28 @@ button:hover {
     text-align: center;
 }
 
-.carrusel-lista{
+.carrusel-lista {
     position: relative;
     display: flex;
     align-items: center;
-  /*  width: fit-content;*/
+    /*  width: fit-content;*/
     height: 22rem;
     padding: 5rem 0 1rem 0;
 
     overflow: hidden;
 }
-.slide{
+
+.slide {
     position: relative;
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     transition: .5s ease-in-out;
 }
-.foto{
-    position: relative;
-    width: 22rem;
-    display: flex;
-    height: 100%;
-  }
-.foto h4{
+
+.foto h4 {
     position: absolute;
     display: flex;
     z-index: 1;
@@ -1031,56 +1035,67 @@ button:hover {
     text-shadow: black 10px;
     line-height: 1rem;
     color: #fff;
-    padding-top: 15rem;
-    left: 0;
+    padding-top: 14rem;
     font-family: 'Alegreya', 'Montserrat';
-width: 100%;
-   justify-content: center;
+    width: 90%;
+    filter: drop-shadow(5px 0 5px, black);
+
+    justify-content: center;
 }
 
-.foto  img{
+.foto {
+    position: relative;
+    display: flex;
+    margin: 0 0.3rem;
+    padding: 0.7rem;
+    height: 100%;
+}
+
+.foto img {
     object-fit: cover;
-    height: 18rem;
-    width: 20rem;
-    padding: 0 0.5rem;
+    height: 16rem;
+    width: 18rem;
     border-radius: 8px;
- 
     transition: .3s ease-in-out;
 }
 
 
-.flecha{
+.flecha {
     border-radius: 30px;
     background-color: #fff;
-
     position: absolute;
     z-index: 4;
     width: 3rem;
     height: 3rem;
     text-align: center;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
     border: 0;
     cursor: pointer;
 }
+
 .flecha:hover {
     background-color: rgba(0, 0, 0, 0.7);
-    
+
 }
 
-.flecha svg{
+.flecha svg {
     width: 0.9rem;
     height: 100%;
-    color:black;
+    color: black;
 }
+
 .flecha svg:hover {
     color: #fff;
 }
-.flecha-ant{
+
+.flecha-ant {
     left: 0;
 }
-.flecha-sig{
+
+.flecha-sig {
     right: 0;
 }
+
 /*Css para cada región*/
 
 
@@ -1090,7 +1105,7 @@ width: 100%;
     margin: auto;
     overflow: hidden;
     position: relative;
-    display:flex;   
+    display: flex;
     flex-flow: column wrap;
     align-items: center;
     /*border-radius: 6px;*/
@@ -1129,11 +1144,13 @@ width: 100%;
     color: white;
     filter: drop-shadow(0 0 3px black);
 }
+
 #banner-regiones2 h6 {
     font-weight: 600;
     color: white;
     filter: drop-shadow(0 0 3px black);
 }
+
 #banner-regiones2 h3 {
     font-weight: 500;
     color: white;
@@ -1320,6 +1337,7 @@ h2:hover::before {
     font-weight: 600;
     text-decoration: underline;
 }
+
 .info {
     background-color: floralwhite;
     margin: 0 2rem;
@@ -1328,7 +1346,8 @@ h2:hover::before {
 
 .info .caja-info {
     justify-content: center;
-    background-color:  rgb(109, 190, 190);/* #deb6ab;*/
+    background-color: rgb(109, 190, 190);
+    /* #deb6ab;*/
     padding: 1rem;
     margin: 1.3rem;
     flex-wrap: nowrap;
@@ -1440,9 +1459,10 @@ h2:hover::before {
     background-color: cadetblue;
     color: white;
     border: 2px solid teal;
-  
+
 
 }
+
 .form button:hover {
     background-color: teal;
     color: rgba(0, 0, 0, 0.7);
@@ -1592,30 +1612,31 @@ h6 {
 
 
     }
-    .carrusel{
-        width: 95%;
+
+    .carrusel {
+        /* width: 95%;*/
         margin: 0 1.8rem;
-    
     }
-    .carrusel h2{
+
+    .carrusel h2 {
         font-size: 2rem;
-   
-    }
-     
-    .carrusel-lista{
-     
-        padding:0 2rem;
 
     }
 
-    .foto{
+    .carrusel-lista {
+
+        padding: 0 2rem;
+
+    }
+
+    .foto {
         width: 22rem;
         padding: 0 0.5rem;
     }
-    .foto h4{
-font-weight: 400;
-width: 95%;
-    
+
+    .foto h4 {
+        font-weight: 400;
+        width: 83%;
     }
 
     /*Página contacto*/
@@ -1760,8 +1781,8 @@ width: 95%;
         #banner-destinos img {
             object-fit: cover;
         }
-               
- 
+
+
         /*Página regiones*/
         .regiones1-contenedor .regiones1-carta {
             width: 300px;
@@ -1785,32 +1806,35 @@ width: 95%;
 
 
         }
-    
-        .carrusel{
-            width: 94%;
+/*carrusel*/
+        .carrusel {
             margin: 0 1.8rem;
-        
+
         }
-        .carrusel h2{
+
+        .carrusel h2 {
             font-size: 2rem;
-       
+
         }
-         
-        .carrusel-lista{
-         
-            padding:0 2rem;
-    
+
+        .foto {
+            width: 25rem;
+
         }
-    
-        .foto{
-            width: 24rem;
-            padding: 0 1rem;
+
+        .foto h4 {
+            font-weight: 400;
+            width: 80%;
+            padding-top: 15rem;
         }
-        .foto h4{
-    font-weight: 400;
-    width: 94%;
-        
+
+        .foto img {
+            object-fit: cover;
+            height: 18rem;
+            width: 20rem;
         }
+
+
 
         /*Css para cada región*/
 
@@ -1970,7 +1994,7 @@ width: 95%;
         /*Banner*/
 
         #banner {
-        
+
             padding-top: 15rem;
         }
 
@@ -2039,9 +2063,7 @@ width: 95%;
         }
 
         /*Página Destinos*/
-      /*  #banner-destinos {
-            height: 750px;
-        }*/
+   
         .contenedor-destinos {
             padding-top: 15.2rem;
         }
@@ -2169,53 +2191,24 @@ width: 95%;
 
 
         }
-       /*.carrusel{
-            width: 95%;
-            margin: 1.5rem;
-        
-        }
-      
-     
-        .foto{
-            width: 20rem;
-            margin: 0 0.7rem;
-            padding: 0 0.10rem;
-            
-        }
-        .foto  h4{
-    font-weight: 400;
-    font-size: 1.5rem; 
-        }*/
-         .carrusel{
-        width: 95%;
-        margin: 0 1.8rem;
-    
-    }
-    .carrusel h2{
-        font-size: 2rem;
-   
-    }
-     
-    .carrusel-lista{
-     
-        padding:0 1.5rem;
 
-    }
+     /*carrusel*/
 
-    .foto{
-        width: 22rem;
-        margin: 0;
-        padding: 0;
-    }
-    .foto h4{
-font-weight: 400;
-width: 95%;
-    }
-      
-        .flecha svg{
-           display: none;          
+        .foto {
+            width: 35rem;
+            padding: 1rem auto;
+
         }
-   
+
+        .foto h4 {
+            font-weight: 400;
+            padding-top: 15rem;
+        }
+
+        .foto img {
+            height: 20rem;
+            width: 25rem;
+        }
 
         /* para cada región*/
         .contenedor-regiones2 {
@@ -2402,4 +2395,3 @@ width: 95%;
         }
     }
 }
-
