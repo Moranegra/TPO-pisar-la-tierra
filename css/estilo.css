@@ -985,7 +985,6 @@ button:hover {
 .carrusel{
     display: flex;
     flex-direction: column;
-    width: 98%;
     padding: 1rem ;
     margin: 1rem;
     background-color: rgb(169, 203, 209);
