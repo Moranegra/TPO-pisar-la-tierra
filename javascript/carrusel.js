@@ -1,35 +1,72 @@
-function App() {}
+document.addEventListener('DOMContentLoaded', function () {
+    let imagenes = [
+        { img: 'media/azul2.jpg' },
+        { img: 'media/bariloche-nieve.jpeg' },
+        { img: 'media/ombu.jpg' },
+        { img: 'media/neuquen.webp' },
+        { img: 'media/atardecer-palmar.jpg' },
+        { img: 'media/Punta-Piramides-1.jpg' },
+        { img: 'media/sanluis-la-florida.jpg' },
+        { img: 'media/ojos-del-campo.jpg' },
+        { img: 'media/salar.jpg' },
+        { img: 'media/carlos-paz.jpeg' },
+        { img: 'media/villa-traful.jpg' },
+        { img: 'media/laguna-de-navarro.jpg' },
+        { img: 'media/valle-de-la-luna.jpg' },
+        { img: 'media/zarate3.jpg' },
+        { img: 'media/cerro-alcazar.jpg' },
+        { img: 'media/cañon-atuel.jpg' },
+        { img: 'media/planetario1.jpg' },
+        { img: 'media/impenetrable.webp' },
+        { img: 'media/wanda.jpg' },
+        { img: 'media/corrientes2.jpg' }
 
-window.onload = function (event) {
-    var app = new App();
-    window.app = app;
-};
+    ]
+    let contador = 0
+    const contenedor = document.querySelector('.slideshow');
+    const overlay = document.querySelector('.overlay');
+    const galeriaImagenes = document.querySelectorAll('.galeria img');
+    const imgSlideshow = document.querySelector('.slideshow img');
 
-App.prototype.processingButton = function(event) {
-    const boton = event.currentTarget;
-    const carruselLista = event.currentTarget.parentNode;
-    const slide = event.currentTarget.parentNode.querySelector('#slide');
-    const foto = slide.querySelectorAll('.foto');
 
-    const fotoWidth = foto[0].offsetWidth;
-    
-    const slideWidth = slide.offsetWidth;
-    const carruselListaWidth = carruselLista.offsetWidth;
+    contenedor.addEventListener('click', function (event) {
+        let atras = contenedor.querySelector('.atras'),
+            adelante = contenedor.querySelector('.adelante'),
+            img = contenedor.querySelector('img'),
+            tgt = event.target
+        if (tgt == atras) {
+            if (contador > 0) {
+                img.src = imagenes[contador - 1].img
+                contador--
+            } else {
+                img.src = imagenes[imagenes.length - 1].img
+                contador = imagenes.length - 1
+            }
+        } else if (tgt == adelante) {
+            if (contador < imagenes.length - 1) {
+                img.src = imagenes[contador + 1].img
+                contador++
+            } else {
+                img.src = imagenes[0].img
+                contador = 0
+            }
+        }
 
-    slide.style.left == ""  ? leftPosition = slide.style.left = 0 : leftPosition = parseFloat(slide.style.left.slice(0, -2) * -1);
+    })
+    Array.from(galeriaImagenes).forEach(img => {
+        img.addEventListener('click', event => {
+            const imagenSeleccionada = +(event.target.dataset.imgMostrar)
+            imgSlideshow.src = imagenes[imagenSeleccionada].img
+            contador = imagenSeleccionada
+            overlay.style.opacity = 1
+            overlay.style.visibility = 'visible'
+        })
+    })
 
-    boton.dataset.button == "button-ant" ? actionAnt(leftPosition,fotoWidth,slide) : actionSig(leftPosition, slideWidth,carruselListaWidth,fotoWidth,slide)
-}
-
-let actionAnt = (leftPosition,fotoWidth,slide) => {
-    if(leftPosition > 0) {
-      //  console.log("entro 2")
-        slide.style.left = `${-1 * (leftPosition - fotoWidth)}px`;
+    var span = document.getElementsByClassName("boton-cerrar")[0];
+    span.onclick = function () {
+        overlay.style.visibility = "hidden";
     }
-}
+})
 
-let actionSig = (leftPosition,slideWidth,carruselListaWidth,fotoWidth,slide) => {
-    if(leftPosition < (slideWidth - carruselListaWidth)) {
-        slide.style.left = `${-1 * (leftPosition + fotoWidth)}px`;
-    }
-}
+

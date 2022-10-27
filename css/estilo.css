@@ -61,6 +61,7 @@ a {
 ul {
     list-style-type: none;
 }
+
 .contenedor-loader {
     background-color: floralwhite;
     position: fixed;
@@ -72,20 +73,23 @@ ul {
     align-items: center;
     justify-content: center;
 }
+
 .loader,
- .loader::before,
- .loader::after {
+.loader::before,
+.loader::after {
     border-radius: 50%;
     width: 2.5em;
     height: 2.5em;
     animation: loader 1.5s infinite ease-in-out;
 }
+
 .loader {
     color: teal;
     font-size: 1rem;
     position: relative;
     animation-delay: -0.16s;
 }
+
 .loader::before,
 .loader::after {
     content: '';
@@ -93,21 +97,26 @@ ul {
     top: 0;
 
 }
+
 .loader::before {
     left: -3.5em;
     animation-delay: -0.32s;
     color: cadetblue;
 }
+
 .loader::after {
     left: 3.5em;
     color: darkcyan;
 }
+
 @keyframes loader {
+
     0%,
     80%,
     100% {
-        box-shadow:0 2.5em 0 -1.3em;
+        box-shadow: 0 2.5em 0 -1.3em;
     }
+
     40% {
         box-shadow: 0 2.5em 0 0;
     }
@@ -717,13 +726,20 @@ a {
 }
 
 .caja-destinos .caja-producto {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0.6rem;
     margin: 1.2rem;
     gap: 10px;
     width: auto;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 0.6rem;
+    margin: 1.2rem;
+    gap: 10px;
+    width: auto;*/
 }
 
 .caja-destinos h4 {
@@ -1037,114 +1053,145 @@ button:hover {
 
 }
 
-/*carrusel*/
-
-.carrusel {
+/*Galeria*/
+.galeria {
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    margin: 1rem;
-    background-color: rgb(169, 203, 209);
-}
+    flex-wrap: wrap;
+    padding: 10px 20px;
 
-.carrusel h2 {
-    font-size: 1.5rem;
+}
+.galeria h2 {
+    flex: 100%;
+    text-align: center;
+margin: 2rem ;
+padding: 1rem;
+font-size: 1.5rem;
     line-height: 2rem;
-    padding: 3rem 2rem 3rem 5rem;
     opacity: .9;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
-    text-align: center;
+    background-color: cadetblue;
 }
 
-.carrusel-lista {
-    position: relative;
-    display: flex;
-    align-items: center;
-    /*  width: fit-content;*/
-    height: 22rem;
-    padding: 5rem 0 1rem 0;
-
-    overflow: hidden;
+.columna {
+    flex: 25%;
+    max-width: 25%;
+    padding: 10px;
 }
 
-.slide {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .5s ease-in-out;
-}
-
-.foto h4 {
-    position: absolute;
-    display: flex;
-    z-index: 1;
-    font-size: 1.5rem;
-    text-shadow: black 10px;
-    line-height: 1rem;
-    color: whitesmoke;
-    padding-top: 14rem;
-    font-family: 'Alegreya', 'Montserrat';
-    width: 90%;
-    filter: drop-shadow(5px 0 5px, black);
-
-    justify-content: center;
-}
-
-.foto {
-    position: relative;
-    display: flex;
-    margin: 0 0.3rem;
-    padding: 0.7rem;
+.columna img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
     height: 100%;
+    filter: grayscale(100%);
+    transition: all .3s ease;
+    border-radius: 6px;
 }
 
-.foto img {
-    object-fit: cover;
-    height: 16rem;
-    width: 18rem;
-    border-radius: 8px;
-    transition: .3s ease-in-out;
+.columna img:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+.columna h4 {
+    display: flex;
+    font-size: 1rem;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+    line-height: 0.5rem 0;
+    color: black;
+    font-weight: 300;
+    font-family: 'Alegreya', 'Montserrat';
+    width: 100%;
+    height: 100%;
+text-align: center;
+    justify-content: center;
 }
 
 
-.flecha {
-    border-radius: 30px;
-    background-color: #fff;
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s ease;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay .slideshow {
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, .9);
+    color: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slideshow img {
+    margin-top: 0.7rem;
+    height: 95%;
+    width: 98%;
+    object-fit: contain;
+}
+
+.boton-cerrar {
     position: absolute;
-    z-index: 4;
-    width: 3rem;
-    height: 3rem;
-    text-align: center;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
-    border: 0;
+    top: -15px;
+    right: -15px;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transition: all 0.2s ease;
+}
+
+.boton-cerrar:hover {
+    transform: scale(1.2);
     cursor: pointer;
 }
 
-.flecha:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-
+.botones {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;  
 }
-
-.flecha svg {
-    width: 0.9rem;
-    height: 100%;
-    color: black;
+.botones:hover > i {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
 }
-
-.flecha svg:hover {
-    color: #fff;
+.atras {
+    right: 20px;
 }
-
-.flecha-ant {
-    left: 0;
+.adelante {
+    left: 20px;
 }
-
-.flecha-sig {
-    right: 0;
+.mdi {
+    pointer-events: none;
 }
 
 /*Css para cada región*/
@@ -1664,32 +1711,10 @@ h6 {
 
     }
 
-    .carrusel {
-        /* width: 95%;*/
-        margin: 0 1.8rem;
-    }
-
-    .carrusel h2 {
-        font-size: 2rem;
-
-    }
-
-    .carrusel-lista {
-
-        padding: 0 2rem;
-
-    }
-
-    .foto {
-        width: 22rem;
-        padding: 0 0.5rem;
-    }
-
-    .foto h4 {
-        font-weight: 400;
-        width: 83%;
-    }
-
+  /* Galeria*/
+.columna h4 {
+    font-size: 1.7rem;
+}
     /*Página contacto*/
     .form label {
 
@@ -1747,10 +1772,6 @@ h6 {
             display: block;
             position: absolute;
             margin-top: 380px;
-            /* padding-left: 45px;
-            padding-left: 45px;
-            margin-right: 45px;*/
-
             text-align: center;
             align-items: center;
             font-size: 1.5rem;
@@ -1857,36 +1878,25 @@ h6 {
 
 
         }
-/*carrusel*/
-        .carrusel {
-            margin: 0 1.8rem;
 
-        }
+  /*galeria*/
+  .columna {
+    flex: 50%;
+    max-width: 50%;
+  }
 
-        .carrusel h2 {
-            font-size: 2rem;
-
-        }
-
-        
-
-        .foto {
-            width: 25rem;
-
-        }
-
-        .foto h4 {
-            font-weight: 400;
-            width: 80%;
-            padding-top: 15rem;
-        }
-
-        .foto img {
-            object-fit: cover;
-            height: 18rem;
-            width: 20rem;
-        }
-
+  .botones {
+    font-size: 30px;
+  }
+  .atras {
+    right: 5px;
+  }
+  .adelante {
+    left: 5px;
+  }
+  .slideshow img {
+    width: 98%;
+  }
 
 
         /*Css para cada región*/
@@ -2116,7 +2126,7 @@ h6 {
         }
 
         /*Página Destinos*/
-   
+
         .contenedor-destinos {
             padding-top: 15.2rem;
         }
@@ -2244,34 +2254,13 @@ h6 {
 
 
         }
-
-     /*carrusel*/
-     .carrusel {
-        margin: 0 8rem;
-     }
-     .carrusel-lista {
-        height: 45rem;
-        padding: 3rem 2rem 1rem 2rem;
-    }
-
-        .foto {
-            width: 60rem;
-            padding: 1rem 5rem;
+        /*Galeria*/
+        .columna {
+            flex: 100%;
+            max-width: 100%;
         }
-
-        .foto h4 {
-            font-weight: 400;
-            padding-top: 25rem;
-            font-size: 3rem;
-            width: 66%;
-        }
-
-        .foto img {
-            height: 30rem;
-            width: 40rem;
-        }
-        .flecha svg {
-            display: none;
+        .columna h4 {
+            font-size: 1.7rem;
         }
 
         /* para cada región*/
@@ -2458,29 +2447,4 @@ h6 {
 
         }
     }
-}
-@media screen and (max-width:400px) {
-    /*carrusel*/
-    .carrusel {
-        margin: 0 5rem;
-     }
-     .carrusel-lista {
-        height: 45rem;
-        padding: 3rem 0.5rem 1rem 0.5rem;
-    }
-
-        .foto {
-            width: 100%;
-            padding: 1rem ;
-        }
-
-        .foto h4 {
-        
-            width: 92%;
-        }
-
-        .foto img {
-            width: 35rem;
-        }
-       
 }
