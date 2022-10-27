@@ -619,7 +619,7 @@ a {
 
 
 .caja-destinos {
-    max-width: 1300px;
+    
     margin: 1.5rem 1.8rem;
     padding: 1.8rem;
     overflow: hidden;
@@ -660,8 +660,8 @@ a {
 }
 
 .caja-destinos .caja-producto {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     padding: 0.6rem;
     margin: 1.2rem;
@@ -669,7 +669,7 @@ a {
     width: auto;
 }
 
-.caja-destinos .caja-producto h4 {
+.caja-destinos h4 {
     width: 100%;
     text-align: center;
     font-weight: 500;
