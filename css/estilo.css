@@ -983,10 +983,11 @@ button:hover {
 /*carrusel*/
 
 .carrusel{
-    width: 100%;
-    max-width: 1300px;
-    margin-left: 1.5rem;
-    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    padding: 1rem ;
+    margin: 1rem;
     background-color: rgb(169, 203, 209);
 }
 .carrusel h2{
@@ -1004,9 +1005,9 @@ button:hover {
     display: flex;
     align-items: center;
   /*  width: fit-content;*/
-    height: 20rem;
+    height: 22rem;
     padding: 5rem 0 1rem 0;
-    max-width: 1300px;
+
     overflow: hidden;
 }
 .slide{
@@ -1019,10 +1020,10 @@ button:hover {
 }
 .foto{
     position: relative;
-    width: 20rem;
+    width: 22rem;
     display: flex;
     height: 100%;
-}
+  }
 .foto h4{
     position: absolute;
     display: flex;
@@ -1068,7 +1069,7 @@ width: 100%;
 }
 
 .flecha svg{
-    width: 12px;
+    width: 0.9rem;
     height: 100%;
     color:black;
 }
