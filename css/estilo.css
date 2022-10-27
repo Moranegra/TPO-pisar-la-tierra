@@ -544,8 +544,7 @@ a {
 }
 
 #banner-destinos ul {
-    /* margin: 0;
-    padding: 0;*/
+
     display: flex;
     width: 1000%;
     animation: destinos 50s infinite alternate ease-in-out;
@@ -1167,10 +1166,11 @@ text-align: center;
 }
 
 .botones {
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     color: #000;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2262,7 +2262,10 @@ h6 {
         .columna h4 {
             font-size: 1.7rem;
         }
-
+        .overlay .slideshow {
+            width: 80%;
+            height: 80%;
+        }
         /* para cada región*/
         .contenedor-regiones2 {
             padding-top: 25rem;
