@@ -1034,7 +1034,7 @@ button:hover {
     font-size: 1.5rem;
     text-shadow: black 10px;
     line-height: 1rem;
-    color: #fff;
+    color: whitesmoke;
     padding-top: 14rem;
     font-family: 'Alegreya', 'Montserrat';
     width: 90%;
@@ -1817,6 +1817,8 @@ h6 {
 
         }
 
+        
+
         .foto {
             width: 25rem;
 
@@ -2193,21 +2195,32 @@ h6 {
         }
 
      /*carrusel*/
+     .carrusel {
+        margin: 0 8rem;
+     }
+     .carrusel-lista {
+        height: 45rem;
+        padding: 3rem 2rem 1rem 2rem;
+    }
 
         .foto {
-            width: 35rem;
-            padding: 1rem auto;
-
+            width: 60rem;
+            padding: 1rem 5rem;
         }
 
         .foto h4 {
             font-weight: 400;
-            padding-top: 15rem;
+            padding-top: 25rem;
+            font-size: 3rem;
+            width: 66%;
         }
 
         .foto img {
-            height: 20rem;
-            width: 25rem;
+            height: 30rem;
+            width: 40rem;
+        }
+        .flecha svg {
+            display: none;
         }
 
         /* para cada región*/
