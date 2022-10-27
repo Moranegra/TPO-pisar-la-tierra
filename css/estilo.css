@@ -402,7 +402,7 @@ h2:hover::before {
     align-items: center;
     max-width: 1300px;
     margin: auto;
-    background-color: whitesmoke
+    background-color: floralwhite;
 }
 
 .experiencias-caja {
@@ -528,13 +528,6 @@ a {
     text-shadow: 0 6px 6px black;
 
 }
-/*.btn-dark {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    border: transparent;
-
-}*/
-
 #banner-destinos a {
     text-transform: capitalize;
     font-style: italic;
@@ -916,9 +909,10 @@ button:hover {
 
 #regiones h1 {
     font-size: 2em;
-    margin: 2rem 0 0 0;
+    margin: 2rem 10rem 0 10rem;
     text-align: center;
     font-weight: 600;
+    background: rgb(100, 181, 184);
 
 }
 
@@ -935,7 +929,7 @@ button:hover {
 .regiones1-contenedor .regiones1-carta {
     width: 300px;
     height: 400px;
-    background-color: lavender;
+    background-color:rgb(222, 245, 249);
     border-radius: 8px;
     box-shadow: 2px rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -983,7 +977,107 @@ button:hover {
 
 
 }
+/*carrusel*/
 
+.carrusel{
+    width: 100%;
+    max-width: 1300px;
+    margin-left: 1.5rem;
+    padding: 1rem 1rem;
+    background-color: rgb(169, 203, 209);
+}
+.carrusel h2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 3rem 2rem 3rem 5rem;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+.carrusel-lista{
+    position: relative;
+    display: flex;
+    align-items: center;
+  /*  width: fit-content;*/
+    height: 20rem;
+    padding: 5rem 0 1rem 0;
+    max-width: 1300px;
+    overflow: hidden;
+}
+.slide{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.foto{
+    position: relative;
+    width: 20rem;
+    display: flex;
+    height: 100%;
+}
+.foto h4{
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    font-size: 1.5rem;
+    text-shadow: black 10px;
+    line-height: 1rem;
+    color: #fff;
+    padding-top: 15rem;
+    left: 0;
+    font-family: 'Alegreya', 'Montserrat';
+width: 100%;
+   justify-content: center;
+}
+
+.foto  img{
+    object-fit: cover;
+    height: 18rem;
+    width: 20rem;
+    padding: 0 0.5rem;
+    border-radius: 8px;
+ 
+    transition: .3s ease-in-out;
+}
+
+
+.flecha{
+    border-radius: 30px;
+    background-color: #fff;
+
+    position: absolute;
+    z-index: 4;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.flecha:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+.flecha svg{
+    width: 12px;
+    height: 100%;
+    color:black;
+}
+.flecha svg:hover {
+    color: #fff;
+}
+.flecha-ant{
+    left: 0;
+}
+.flecha-sig{
+    right: 0;
+}
 /*Css para cada región*/
 
 
@@ -993,8 +1087,6 @@ button:hover {
     margin: auto;
     overflow: hidden;
     position: relative;
-    /*border-radius: 6px;*/
-
 }
 
 #banner-regiones2 ul {
@@ -1027,19 +1119,16 @@ button:hover {
     padding: 2.5rem;
     font-weight: 600;
     color: white;
-    /*text-shadow: 0 6px 6px black;*/
     filter: drop-shadow(0 0 3px black);
 }
 #banner-regiones2 h6 {
     font-weight: 600;
     color: white;
-  /*  text-shadow: 0 6px 6px black;*/
     filter: drop-shadow(0 0 3px black);
 }
 #banner-regiones2 h3 {
     font-weight: 500;
     color: white;
-   /* text-shadow: 0 6px 6px black;*/
     filter: drop-shadow(0 0 3px black);
 }
 
@@ -1139,7 +1228,6 @@ button:hover {
     padding: 1.25rem;
     margin: 6.25rem 0 1.25rem;
     font-weight: bold;
-    /* text-decoration: underline;*/
     font-weight: 500;
     position: relative;
     font-family: 'Montserrat';
@@ -1221,11 +1309,18 @@ h2:hover::before {
     justify-content: center;
     padding: 2rem;
     margin: 3rem 3rem 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.info {
+    background-color: floralwhite;
+    margin: 0 2rem;
+    padding: 0 0 2rem 0;
 }
 
 .info .caja-info {
     justify-content: center;
-    background-color:  rgb(58, 199, 199);/* #deb6ab;*/
+    background-color:  rgb(109, 190, 190);/* #deb6ab;*/
     padding: 1rem;
     margin: 1.3rem;
     flex-wrap: nowrap;
@@ -1286,7 +1381,7 @@ h2:hover::before {
     height: 30rem;
     border: 1px solid black;
     border-radius: 6px;
-    background-color: lightcyan;
+    background-color: rgb(169, 203, 209);
 
 }
 
@@ -1334,15 +1429,16 @@ h2:hover::before {
     width: 30%;
     border-radius: 6px;
     height: 3rem;
-
+    background-color: cadetblue;
     color: white;
-    background-color: black;
-    border: transparent;
+    border: 2px solid teal;
+  
 
 }
 .form button:hover {
     background-color: teal;
-    color: black;
+    color: rgba(0, 0, 0, 0.7);
+    border: 2px solid cadetblue;
 }
 
 .nosotras {
@@ -1487,6 +1583,31 @@ h6 {
         font-size: 1.3rem;
 
 
+    }
+    .carrusel{
+        width: 95%;
+        margin: 0 1.8rem;
+    
+    }
+    .carrusel h2{
+        font-size: 2rem;
+   
+    }
+     
+    .carrusel-lista{
+     
+        padding:0 2rem;
+
+    }
+
+    .foto{
+        width: 22rem;
+        padding: 0 0.5rem;
+    }
+    .foto h4{
+font-weight: 400;
+width: 95%;
+    
     }
 
     /*Página contacto*/
@@ -1655,6 +1776,32 @@ h6 {
             width: 90%;
 
 
+        }
+    
+        .carrusel{
+            width: 94%;
+            margin: 0 1.8rem;
+        
+        }
+        .carrusel h2{
+            font-size: 2rem;
+       
+        }
+         
+        .carrusel-lista{
+         
+            padding:0 2rem;
+    
+        }
+    
+        .foto{
+            width: 24rem;
+            padding: 0 1rem;
+        }
+        .foto h4{
+    font-weight: 400;
+    width: 94%;
+        
         }
 
         /*Css para cada región*/
@@ -2014,6 +2161,53 @@ h6 {
 
 
         }
+       /*.carrusel{
+            width: 95%;
+            margin: 1.5rem;
+        
+        }
+      
+     
+        .foto{
+            width: 20rem;
+            margin: 0 0.7rem;
+            padding: 0 0.10rem;
+            
+        }
+        .foto  h4{
+    font-weight: 400;
+    font-size: 1.5rem; 
+        }*/
+         .carrusel{
+        width: 95%;
+        margin: 0 1.8rem;
+    
+    }
+    .carrusel h2{
+        font-size: 2rem;
+   
+    }
+     
+    .carrusel-lista{
+     
+        padding:0 1.5rem;
+
+    }
+
+    .foto{
+        width: 22rem;
+        margin: 0;
+        padding: 0;
+    }
+    .foto h4{
+font-weight: 400;
+width: 95%;
+    }
+      
+        .flecha svg{
+           display: none;          
+        }
+   
 
         /* para cada región*/
         .contenedor-regiones2 {
@@ -2201,40 +2395,3 @@ h6 {
     }
 }
 
-/*@media screen and (max-width:728px) and (orientation: landscape) {
-
-
-    .previa-producto .previa {
-
-        width: 30rem;
-        height: 30rem;
-    }
-
-    .previa-producto .previa h3 {
-        font-size: 1.5rem;
-    }
-
-    .previa-producto .previa h6 {
-        font-size: 0.7rem;
-    }
-
-    .previa-producto .previa p {
-        font-size: 0.7rem;
-
-    }
-
-    .previa-producto .previa img {
-        height: 10rem;
-        width: 23rem;
-    }
-}
-
-@media screen and (max-width:576px) and (orientation: landscape) {
-
-
-    .previa-producto .previa {
-
-        width: 40rem;
-        height: 50rem;
-    }
-}*/
