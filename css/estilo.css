@@ -300,24 +300,6 @@ label:hover {
     padding: 12.5rem 1.25rem;
 }
 
-/*#banner h1 {
-    padding: 2.5rem 0;
-    font-weight: 600;
-    
-}
-
-#banner h6,
-#banner .thinner {
-    font-weight: 400;
-
-}
-
-#banner a {
-    text-transform: capitalize;
-    font-style: italic;
-
-}*/
-
 /*Sección Regiones-Página index*/
 #regiones {
     padding: 3.1rem 2rem;
@@ -325,39 +307,11 @@ label:hover {
 }
 
 #regiones h2 {
+    display: grid;
+    background-color: rgb(136, 181, 181);
+    padding:0.5rem 5rem;
+    margin: 0.5rem 5rem;
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 1.8rem;
-}
-
-#regiones h2 {
-    position: relative;
-    display: grid
-}
-
-#regiones h2::after,
-h2::before {
-    content: '';
-    position: absolute;
-    width: 140px;
-    height: 3px;
-    background-color: currentColor;
-    top: 3rem;
-    transform: scale(0);
-    transition: all 0.5s ease-in;
-}
-
-#regiones h2::before {
-    left: 9rem;
-}
-
-#regiones h2::after {
-    right: 9rem;
-}
-
-#regiones h2:hover::after,
-h2:hover::before {
-    transform: scale(1);
 }
 
 #regiones p {
@@ -445,6 +399,12 @@ h2:hover::before {
     display: flex;
     text-align: center;
     flex-direction: column;
+}
+.experiencias-texto h2 {
+    background-color: rgb(136, 181, 181);
+    padding:0.5rem 8rem;
+    margin: 0.5rem 8rem;
+    text-align: center;
 }
 
 .experiencias-texto p {
@@ -1059,12 +1019,13 @@ button:hover {
     padding: 10px 20px;
 
 }
+
 .galeria h2 {
     flex: 100%;
     text-align: center;
-margin: 2rem ;
-padding: 1rem;
-font-size: 1.5rem;
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
     line-height: 2rem;
     opacity: .9;
     text-transform: uppercase;
@@ -1094,6 +1055,7 @@ font-size: 1.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
 }
+
 .columna h4 {
     display: flex;
     font-size: 1rem;
@@ -1105,7 +1067,7 @@ font-size: 1.5rem;
     font-family: 'Alegreya', 'Montserrat';
     width: 100%;
     height: 100%;
-text-align: center;
+    text-align: center;
     justify-content: center;
 }
 
@@ -1178,18 +1140,22 @@ text-align: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer;  
+    cursor: pointer;
 }
-.botones:hover > i {
+
+.botones:hover>i {
     transform: scale(1.1);
     transition: all 0.2s ease;
 }
+
 .atras {
     right: 20px;
 }
+
 .adelante {
     left: 20px;
 }
+
 .mdi {
     pointer-events: none;
 }
@@ -1230,14 +1196,13 @@ text-align: center;
 .contenedor-regiones2 {
     position: absolute;
     width: 100%;
-    max-width: 1300px;
     text-align: center;
     padding: 12.25rem 0 0 4rem;
 
 }
 
 #banner-regiones2 h1 {
-    padding: 2.5rem;
+    padding: 2.5rem 0;
     font-weight: 600;
     color: white;
     filter: drop-shadow(0 0 3px black);
@@ -1642,27 +1607,7 @@ h6 {
     /*Seccion regiones-Index*/
     #regiones h2 {
         text-align: center;
-        padding-top: 0.6rem;
-        padding-bottom: 1.8rem;
-
-
-    }
-
-    #regiones h2::after,
-    h2::before {
-
-        width: 120px;
-
-        top: 1.8rem;
-
-    }
-
-    #regiones h2::before {
-        left: 6rem;
-    }
-
-    #regiones h2::after {
-        right: 6rem;
+        padding: 0.5rem 0;
     }
 
     /*Página destinos*/
@@ -1711,10 +1656,11 @@ h6 {
 
     }
 
-  /* Galeria*/
-.columna h4 {
-    font-size: 1.7rem;
-}
+    /* Galeria*/
+    .columna h4 {
+        font-size: 1.7rem;
+    }
+
     /*Página contacto*/
     .form label {
 
@@ -1825,25 +1771,6 @@ h6 {
             font-size: 1.8rem;
         }
 
-        #regiones h2::after,
-        h2::before {
-
-            position: absolute;
-            width: 50px;
-            height: 2px;
-            top: 1.8rem;
-
-        }
-
-        #regiones h2::before {
-            left: 1.3rem;
-        }
-
-        #regiones h2::after {
-            right: 1.3rem;
-        }
-
-
         /*Sección experiencia-Página index*/
         .capa h3 {
             font-size: 2rem;
@@ -1879,24 +1806,32 @@ h6 {
 
         }
 
-  /*galeria*/
-  .columna {
-    flex: 50%;
-    max-width: 50%;
-  }
+        /*galeria*/
+        .columna {
+            flex: 50%;
+            max-width: 50%;
+        }
 
-  .botones {
-    font-size: 30px;
-  }
-  .atras {
-    right: 5px;
-  }
-  .adelante {
-    left: 5px;
-  }
-  .slideshow img {
-    width: 98%;
-  }
+        .botones {
+            font-size: 30px;
+        }
+
+        .atras {
+            right: 5px;
+        }
+
+        .adelante {
+            left: 5px;
+        }
+
+        .slideshow img {
+            width: 98%;
+        }
+
+        .botones {
+            width: 20px;
+            height: 20px;
+        }
 
 
         /*Css para cada región*/
@@ -2077,23 +2012,6 @@ h6 {
             font-size: 1.7rem;
         }
 
-        #regiones h2::after,
-        h2::before {
-
-            width: 50px;
-            height: 1px;
-            top: 2.5rem;
-        }
-
-        #regiones h2::before {
-            left: 1rem;
-        }
-
-        #regiones h2::after {
-            right: 0.5rem;
-        }
-
-
         .experiencias-texto p {
             font-size: 1.5rem;
         }
@@ -2254,18 +2172,22 @@ h6 {
 
 
         }
+
         /*Galeria*/
         .columna {
             flex: 100%;
             max-width: 100%;
         }
+
         .columna h4 {
             font-size: 1.7rem;
         }
+
         .overlay .slideshow {
             width: 80%;
             height: 80%;
         }
+
         /* para cada región*/
         .contenedor-regiones2 {
             padding-top: 25rem;
